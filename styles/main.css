@@ -141,7 +141,7 @@ figure figcaption a:hover {
 section .mybutton:hover {
     background: white;
     color: #151D21;
-    font-size: 26px;
+    font-size: 25px;
     margin-top: 29px;
 }
 
@@ -157,6 +157,31 @@ footer {
     background-position: 0% 0%;
     position: fixed;
     bottom: 0pt;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Roboto';
+}
+.card button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: whitesmoke;
+    background-color: #ff6f6f;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+
+}
+  
+.card button:hover {
+    background: white;
+    color: #151D21;
 }
 
 @media screen and (max-width: 1140px) {
