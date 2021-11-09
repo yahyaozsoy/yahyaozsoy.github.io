@@ -186,6 +186,7 @@ footer {
     color: #151D21;
 }
 
+
 @media screen and (max-width: 1140px) {
     section nav {
         font-family: 'Roboto Thin';
@@ -198,7 +199,7 @@ footer {
     }
 
     li {
-        font-size: 24px;
+        font-size: 36px;
     }
 
     .features {
@@ -209,7 +210,7 @@ footer {
     }
 
     .features figure img {
-        border-radius: 50%;
+        border-radius: 10%;
         width: 200px;
         height: 200px;
     }    
@@ -228,7 +229,7 @@ footer {
     }
 
     li {
-        font-size: 14px;
+        font-size: 28px;
     }
 
     section header {
@@ -249,34 +250,38 @@ footer {
     }
 
     footer {
-        font-size: 10px;
+        font-size: 12px;
     }
     header .logo a {
-        height: 50px;
-	    width: 60px;
-        background-size: 50px;
+        height: 60px;
+	    width: 80px;
+        background-size: 70px;
     }
 
 }
 
 @media screen and (max-width: 600px) {
     li {
-        font-size: 12px;
+        font-size: 24px;
     }
 
     section nav {
-        font-size: 14px;
+        font-size: 20px;
         line-height: 26px;
     }
 
     section .mybutton {
-        font-size: 12px;
+        font-size: 18px;
     }
 
     section .mybutton:hover {
         background: white;
         color: #151D21;
-        font-size: 14px;
+        font-size: 20px;
         margin-top: 29px;
+    }
+    iframe{
+        width: fit-content;
+        height: fit-content;
     }
 }
