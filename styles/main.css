@@ -200,14 +200,15 @@ section nav {
 section .mybutton {
     font-family: 'Roboto';
     font-size: 24px;
+    border: 2px solid black;
+    border-color: #dd4a4a;
     color: whitesmoke;
-    background: #dd4a4a;
+    background-color: #222222;
     display: inline-flex;
     padding: 6px;
     margin-top: 30px;
     margin-right: 5%;
     margin-left: 5%;
-    border: none;
     border-radius: 5px;
 }
 
@@ -248,11 +249,11 @@ figure figcaption a:hover {
     color: gray;
 }
 
-section .mybutton:hover {
-    background: white;
-    color: #151D21;
-    font-size: 25px;
-    margin-top: 29px;
+section .mybutton:hover{
+    background: #dd4a4a;
+    color: whitesmoke;
+    /*font-size: 25px;
+    margin-top: 29px;*/
 }
 
 .par {
@@ -279,21 +280,20 @@ footer {
     border-radius: 10%;
 }
 .card button {
-    border: none;
-    outline: 0;
     padding: 12px;
+    border: 2px solid #dd4a4a;
     color: whitesmoke;
-    background-color: #dd4a4a;
+    background-color: #222222;
     text-align: center;
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-
+    outline: 0;
 }
   
 .card button:hover {
-    background: whitesmoke;
-    color: #151D21;
+    background: #dd4a4a;
+    color: whitesmoke;
 }
 
 .weirdbutton a{
@@ -338,7 +338,7 @@ footer {
 
 @media screen and (max-width: 760px) {
     .weirdbutton a{
-        margin-right: 5%;
+        margin-right: 10%;
     }
     .features {
         display: block;
@@ -394,10 +394,10 @@ footer {
     }
 
     section .mybutton:hover {
-        background: white;
-        color: #151D21;
-        font-size: 20px;
-        margin-top: 29px;
+        background: #dd4a4a;
+        color: whitesmoke;
+        /*font-size: 20px;
+        margin-top: 29px;*/
     }
     iframe{
         width: fit-content;
