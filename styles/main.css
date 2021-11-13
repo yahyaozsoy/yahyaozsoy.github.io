@@ -301,6 +301,11 @@ footer {
     margin-left: 0%;
 }
 
+.socialmedias{
+    font-size: 30px; 
+    margin: 5px;
+}
+
 @media screen and (max-width: 1140px) {
     section nav {
         font-family: 'Roboto Thin';
