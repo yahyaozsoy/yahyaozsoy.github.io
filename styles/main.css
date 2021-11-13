@@ -263,11 +263,13 @@ section .mybutton:hover{
 
 footer {
     font-family: 'Roboto Thin';
-    text-align: center;
     background-attachment: scroll;
     background-position: 0% 0%;
     position: fixed;
+    width: 100%;
+    text-align: left;
     bottom: 0pt;
+    background-color: #222222;
 }
 
 .card {
@@ -318,7 +320,7 @@ footer {
     }
 
     .socialmedias{
-        font-size: 28px; 
+        font-size: 30px; 
         margin: 5px;
     }
 
