@@ -277,6 +277,7 @@ footer {
     margin: auto;
     text-align: center;
     font-family: 'Roboto';
+    font-size: 19px;
     border-radius: 10%;
 }
 .card button {
