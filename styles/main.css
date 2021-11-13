@@ -230,8 +230,8 @@ section .mybutton {
 
 .features figure img {
 	border-radius: 10%;
-	width: 300px;
-	height: 300px;
+	width: 250px;
+	height: 250px;
 }
 
 figure img:hover {
