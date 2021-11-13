@@ -317,6 +317,11 @@ footer {
         align-items: center;
     }
 
+    .socialmedias{
+        font-size: 28px; 
+        margin: 5px;
+    }
+
     li {
         font-size: 28px;
     }
@@ -346,8 +351,14 @@ footer {
     .weirdbutton a{
         margin-right: 10%;
     }
+
     .features {
         display: block;
+    }
+
+    .socialmedias{
+        font-size: 24px; 
+        margin: 5px;
     }
 
     li {
@@ -386,6 +397,11 @@ footer {
     .weirdbutton a{
         margin-right: 10%;
     }
+
+    .socialmedias{
+        font-size: 20px; 
+    }
+
     li {
         font-size: 20px;
     }
