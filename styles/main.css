@@ -312,7 +312,7 @@ footer {
     }
 
     li {
-        font-size: 30px;
+        font-size: 28px;
     }
 
     .features {
@@ -337,12 +337,15 @@ footer {
 }
 
 @media screen and (max-width: 760px) {
+    .weirdbutton a{
+        margin-right: 5%;
+    }
     .features {
         display: block;
     }
 
     li {
-        font-size: 26px;
+        font-size: 24px;
     }
 
     section header {
