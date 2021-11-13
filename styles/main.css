@@ -296,6 +296,9 @@ footer {
     color: #151D21;
 }
 
+.weirdbutton a{
+    margin-left: 0%;
+}
 
 @media screen and (max-width: 1140px) {
     section nav {
