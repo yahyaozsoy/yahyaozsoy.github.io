@@ -334,6 +334,9 @@ footer {
 }
 
 @media screen and (max-width: 760px) {
+    .weirdbutton a{
+        margin-right: 1%;
+    }
     .features {
         display: block;
     }
