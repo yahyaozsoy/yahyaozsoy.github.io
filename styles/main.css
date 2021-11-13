@@ -375,7 +375,7 @@ footer {
 
 @media screen and (max-width: 650px) {
     .weirdbutton a{
-        margin-left: 1%;
+        margin-right: 1%;
     }
     li {
         font-size: 22px;
