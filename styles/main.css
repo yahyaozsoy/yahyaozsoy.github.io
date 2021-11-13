@@ -375,10 +375,10 @@ footer {
 
 @media screen and (max-width: 650px) {
     .weirdbutton a{
-        margin-left: -2%;
+        margin-right: 10%;
     }
     li {
-        font-size: 22px;
+        font-size: 20px;
     }
 
     section nav {
