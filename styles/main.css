@@ -468,6 +468,16 @@ footer {
         font-size: 14px;
     }
 
+    .fa-facebook .tooltiptext{
+        width: 80px;
+        left: 225%;
+    }
+
+    .fa-twitter .tooltiptext{
+        width: 80px;
+        left: 150%;
+    }
+
     li {
         font-size: 20px;
     }
