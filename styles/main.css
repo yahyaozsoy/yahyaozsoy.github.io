@@ -122,10 +122,7 @@ section .mybutton {
 	border-radius: 10%;
 	width: 250px;
 	height: 250px;
-}
 
-figure img:hover {
-    filter: brightness(0.7);
 }
 
 figure figcaption {
@@ -173,6 +170,11 @@ footer {
     font-size: 19px;
     border-radius: 10%;
 }
+
+.card:hover{
+    transform: scale(1.1); /* (150% zoom)*/
+}
+
 .card button {
     padding: 12px;
     border: 2px solid #dd4a4a;
