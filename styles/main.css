@@ -163,8 +163,9 @@ footer {
 }
 
 .card {
+    background-color: #191919;
     color:rgb(160, 160, 160);
-    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.37);
     max-width: 300px;
     margin: auto;
     text-align: center;
@@ -176,7 +177,7 @@ footer {
     padding: 12px;
     border: 2px solid #dd4a4a;
     color: whitesmoke;
-    background-color: #222222;
+    background-color: #191919;
     text-align: center;
     cursor: pointer;
     width: 100%;
