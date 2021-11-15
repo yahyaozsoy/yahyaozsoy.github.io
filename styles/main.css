@@ -99,7 +99,7 @@ section .mybutton {
     margin-top: 30px;
     margin-right: 5%;
     margin-left: 5%;
-    border-radius: 5px;
+    border-radius: 20px;
 }
 
 .features {
@@ -163,19 +163,24 @@ footer {
     background-color: #191919;
     color:rgb(160, 160, 160);
     box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.37);
-    max-width: 300px;
+    max-width: 295px;
     margin: auto;
     text-align: center;
     font-family: 'Roboto', Arial, sans-serif;
     font-size: 19px;
-    border-radius: 10%;
+    border-radius: 20px;
 }
 
 .card:hover{
     transform: scale(1.1); /* (150% zoom)*/
 }
 
+.card:hover button{
+    visibility: visible;
+}
+
 .card button {
+    visibility: hidden;
     padding: 12px;
     border: 2px solid #dd4a4a;
     color: whitesmoke;
@@ -185,6 +190,7 @@ footer {
     width: 100%;
     font-size: 18px;
     outline: 0;
+    border-radius: 20px;
 }
   
 .card button:hover {
@@ -267,6 +273,10 @@ footer {
         align-items: center;
     }
 
+    .card{
+        max-width: 280px;
+    }
+
     .socialmedias{
         font-size: 30px; 
         margin: 5px;
@@ -335,12 +345,20 @@ footer {
     footer {
         font-size: 16px;
     }
+    
     header .logo a {
         height: 60px;
 	    width: 80px;
         background-size: 70px;
     }
 
+    .card{
+        max-width: 265px;
+    }
+
+    .card button{
+        visibility: visible;
+    }
 }
 
 @media screen and (max-width: 650px) {
