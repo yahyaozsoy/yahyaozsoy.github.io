@@ -65,7 +65,7 @@ section header {
 }
 
 .home {
-    margin-top: 40px;
+    margin-top: 220px;
 }
 
 .header {
@@ -167,7 +167,7 @@ footer {
     margin: auto;
     text-align: center;
     font-family: 'Roboto', Arial, sans-serif;
-    font-size: 19px;
+    font-size: 20px;
     border-radius: 20px;
 }
 
@@ -262,9 +262,57 @@ footer {
     border-style: solid;
     border-color: transparent transparent rgba(92, 87, 87, 0.397) transparent;
 }
+
+.dropbtn {
+    background-color: #ffffff00;
+    color: whitesmoke;
+    padding: 0px;
+    font-family: 'Roboto Thin';
+    font-size: 36px;
+    border: none;
+}
+  
+.dropdown {
+    font-family: 'Roboto Thin';
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content{
+    display: none;
+    position: absolute;
+    font-size: x-large;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.15);
+    min-width: 210px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+}
+  
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    color: #52B5F8;
+}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+.dropdown:hover .dropbtn {
+    background-color: #ffffff00; 
+    color: #52B5F8;
+}
+
 .small{
     font-size: 22px;
 }
+
 @media screen and (max-width: 1140px) {
     section nav {
         font-family: 'Roboto Thin', Arial, sans-serif;

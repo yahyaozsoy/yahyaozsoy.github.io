@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>Yahya ÖZSOY</title>
+        <title>Yahya OZSOY</title>
         <link rel="icon" href="images/logo.png">
         <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
         <link rel="stylesheet" href="../styles/main.css">
@@ -16,14 +16,20 @@
                 <ul class="topnav">
                     <li class="logo"><a href="../"></a></li>
                     <li><a href="../"><b>ANASAYFA</b></a></li>
-                    <li><a href="projects"><b>PROJELERİM</b></a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn"><b>PROJELERİM</b></button>
+                        <div class="dropdown-content">
+                          <a href="pages/projects#okul">OKUL</a>
+                          <a href="pages/projects#oyun">OYUN</a>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </header>
 
-        <section>
+        <section id="okul">
             <header class="header">
-                <header class="home">
+                <header>
                     <b>Okul Projelerim</b>    
                 </header>
             </header>
@@ -40,9 +46,9 @@
             </figure>
         </section>
 
-        <section>
+        <section id="oyun">
             <header class="header">
-                <header class="home">
+                <header>
                     <b>Yaptığım Oyunlar</b>
                 </header>
             </header>
