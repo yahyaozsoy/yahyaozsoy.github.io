@@ -23,7 +23,7 @@ a {
 }
 
 a:hover {
-    color: #ff6f6f;
+    color: #52B5F8;
 }
 
 header .logo a {
@@ -65,16 +65,16 @@ section header {
 }
 
 .home {
-    margin-top: 220px;
+    margin-top: 40px;
 }
 
-.games {
+.header {
     margin-top: 20px;
 }
 
 section {
     text-align: center;
-    padding: 8%;
+    padding: 5%;
 }
 
 section nav {
@@ -144,8 +144,8 @@ section .mybutton:hover{
 }
 
 .par {
-    margin-top: 500px;
-    height: 650px;
+    margin-top: 250px;
+    height: 500px;
 }
 
 footer {
@@ -242,7 +242,10 @@ footer {
     transition: opacity 0.3s;
 }
 
-  
+.tooltip:hover{
+    color: #ff6f6f;
+}
+
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
     visibility: visible;
@@ -290,7 +293,7 @@ footer {
         display: flex;
         flex-direction: row;
         position: relative;
-        top: -40px;
+        top: -20px;
     }
 
     .features figure img {
@@ -329,7 +332,7 @@ footer {
         font-size: 42px;
     }
 
-    .games {
+    .header {
         margin-top: 50px;
     }
 
