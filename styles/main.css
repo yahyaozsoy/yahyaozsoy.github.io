@@ -1,5 +1,7 @@
 /*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
-
+/*:root{
+    For variables 
+}*/
 html {
     scroll-behavior: smooth;
 }
@@ -308,6 +310,11 @@ footer {
 .dropdown:hover .dropbtn {
     background-color: #ffffff00; 
     color: #52B5F8;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .small{
