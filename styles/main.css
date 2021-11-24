@@ -1,7 +1,9 @@
 /*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
-/*:root{
-    For variables 
-}*/
+:root{
+    --roboto-t:'Roboto Thin', Arial, sans-serif, helvetica;
+    --roboto-b:'Roboto Black', Arial Black, sans-serif, helvetica;
+    --roboto: 'Roboto', Arial, sans-serif, helvetica;
+}
 html {
     scroll-behavior: smooth;
 }
@@ -53,7 +55,7 @@ li {
 
 .topnav {
     list-style: none;
-    font-family: 'Roboto Thin', Arial, sans-serif;
+    font-family: var(--roboto-t);
     color: aliceblue;
     margin: 50px 0 0 0;
     text-align: right;
@@ -61,7 +63,7 @@ li {
 
 section header {
     margin-top: 0px;
-    font-family: 'Roboto Thin', Arial, sans-serif;
+    font-family: var(--roboto-t);
     font-size: 62px;
     margin-bottom: 20px;
 }
@@ -81,7 +83,7 @@ section {
 }
 
 section nav {
-    font-family: 'Roboto Thin', Arial, sans-serif;
+    font-family: var(--roboto-t);
     font-size: 36px;
     line-height: 55px;
     text-align: left;
@@ -91,7 +93,7 @@ section nav {
 }
 
 section .mybutton {
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: var(--roboto);
     font-size: 24px;
     border: 2px solid black;
     border-color: #dd4a4a;
@@ -129,7 +131,7 @@ section .mybutton {
 }
 
 figure figcaption {
-    font-family: 'Roboto Black';
+    font-family: var(--roboto-b);
     font-size: 36px;
     margin-top: 10px;
     margin-bottom: 100px;
@@ -152,7 +154,7 @@ section .mybutton:hover{
 }
 
 footer {
-    font-family: 'Roboto Thin', Arial, sans-serif;
+    font-family: var(--roboto-t);
     background-attachment: scroll;
     background-position: 0% 0%;
     position: fixed;
@@ -169,7 +171,7 @@ footer {
     max-width: 295px;
     margin: auto;
     text-align: center;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: var(--roboto);
     font-size: 20px;
     border-radius: 20px;
 }
@@ -225,7 +227,7 @@ footer {
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
-    font-family: 'Roboto', Arial, sans-serif;
+    font-family: var(--roboto);
 
     /*Text decoration*/
     text-decoration: underline;
@@ -270,13 +272,13 @@ footer {
     background-color: #ffffff00;
     color: rgb(245, 245, 245);
     padding: 0px;
-    font-family: 'Roboto Thin';
+    font-family: var(--roboto-t);
     font-size: 36px;
     border: none;
 }
   
 .dropdown {
-    font-family: 'Roboto Thin';
+    font-family: var(--roboto-t);
     position: relative;
     display: inline-block;
 }
@@ -323,7 +325,7 @@ footer {
 
 @media screen and (max-width: 1140px) {
     section nav {
-        font-family: 'Roboto Thin', Arial, sans-serif;
+        font-family: var(--roboto-t);
         font-size: 28px;
         line-height: 36px;
         text-align: left;
@@ -336,7 +338,7 @@ footer {
         background-color: #ffffff00;
         color: rgb(245, 245, 245);
         padding: 0px;
-        font-family: 'Roboto Thin';
+        font-family: var(--roboto-t);
         font-size: 28px;
         border: none;
     }
@@ -392,7 +394,7 @@ footer {
     }    
 
     figure figcaption {
-        font-family: 'Roboto Black', Arial Black, sans-serif;
+        font-family: var(--roboto-b);
         font-size: 24px;
         margin-top: 10px;
         margin-bottom: 100px;
@@ -408,7 +410,7 @@ footer {
         background-color: #ffffff00;
         color: rgb(245, 245, 245);
         padding: 0px;
-        font-family: 'Roboto Thin';
+        font-family: var(--roboto-t);
         font-size: 24px;
         border: none;
     }
@@ -496,13 +498,13 @@ footer {
         background-color: #ffffff00;
         color: rgb(245, 245, 245);
         padding: 0px;
-        font-family: 'Roboto Thin';
+        font-family: var(--roboto-t);
         font-size: 20px;
         border: none;
     }
       
     .dropdown {
-        font-family: 'Roboto Thin';
+        font-family: var(--roboto-t);
         position: relative;
         display: inline-block;
     }
