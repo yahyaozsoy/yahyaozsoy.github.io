@@ -339,6 +339,9 @@ div .sm-footer:hover{
 }
 
 @media screen and (max-width: 1140px) {
+    .sm-footer{
+        width: 98.5%;
+    }
     section nav {
         font-family: var(--roboto-t);
         font-size: 28px;
@@ -417,6 +420,9 @@ div .sm-footer:hover{
 }
 
 @media screen and (max-width: 760px) {
+    .sm-footer{
+        width: 98%;
+    }
     .weirdbutton a{
         margin-right: 10%;
     }
@@ -500,6 +506,9 @@ div .sm-footer:hover{
 }
 
 @media screen and (max-width: 650px) {
+    .sm-footer{
+        width: 96%;
+    }
     .weirdbutton a{
         margin-right: 10%;
     }
