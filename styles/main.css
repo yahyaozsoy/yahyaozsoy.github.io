@@ -17,10 +17,29 @@ html {
 
 body {
     background: #222222;
-    background-size: 100%;
-    background-repeat: no-repeat;
     color: #efefef;
+    
+    background-image: url(../images/yogithub.png);
+    background-repeat: repeat;
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    animation-name: animate;
+    animation-duration: 250s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
+
+@keyframes animate {
+    from {
+      background-position : 0px -9999px;
+    }
+    to  {
+      backgorund-position : 0px 9999px;
+    }
+}
+
 
 a {
     text-decoration: none;
