@@ -3,6 +3,7 @@
     --roboto-t:'Roboto Thin', Arial, sans-serif, helvetica;
     --roboto-b:'Roboto Black', Arial Black, sans-serif, helvetica;
     --roboto: 'Roboto', Arial, sans-serif, helvetica;
+    --footer-size: 20px;
 }
 html {
     scroll-behavior: smooth;
@@ -154,6 +155,7 @@ section .mybutton:hover{
 
 footer {
     font-family: var(--roboto-t);
+    font-size: var(--footer-size);
     background-attachment: scroll;
     background-position: 0% 0%;
     position: fixed;
@@ -320,6 +322,20 @@ footer {
 
 .small{
     font-size: 22px;
+}
+
+.sm-footer{
+    font-family: var(--roboto-t);
+    font-size: var(--footer-size);
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    width: 99%;
+    text-align: right;
+    bottom: 0pt;
+}
+div .sm-footer:hover{
+    color: #ff6f6f;
 }
 
 @media screen and (max-width: 1140px) {
