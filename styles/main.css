@@ -42,6 +42,7 @@ body {
 
 
 a {
+    transition: 200ms ease-in-out;
     text-decoration: none;
     color: aliceblue;
 }
@@ -113,6 +114,7 @@ section nav {
 }
 
 section .mybutton {
+    transition: 200ms ease-in-out;
     font-family: var(--roboto);
     font-size: 24px;
     border: 2px solid black;
@@ -198,6 +200,7 @@ footer {
 
 .card:hover{
     transform: scale(1.1); /* (150% zoom)*/
+    transition: 200ms ease;
 }
 
 .card:hover button{
@@ -205,6 +208,7 @@ footer {
 }
 
 .card button {
+    transition: 200ms ease-in-out;
     visibility: hidden;
     padding: 12px;
     border: 2px solid #dd4a4a;
@@ -234,6 +238,7 @@ footer {
 
 /* Tooltip container */
 .tooltip {
+    transition: 200ms ease-in-out;
     position: relative;
     display: inline-block;
 }
@@ -289,6 +294,7 @@ footer {
 }
 
 .dropbtn {
+    transition: 200ms ease-in-out;
     background-color: #ffffff00;
     color: rgb(245, 245, 245);
     padding: 0px;
