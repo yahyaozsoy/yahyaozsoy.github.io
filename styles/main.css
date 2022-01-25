@@ -60,7 +60,7 @@ body {
 }
 
 path{
-    transition: fill var(--normal-trans-eio);
+    transition: fill 1.5s ease-in-out;
 }
 
 a {
