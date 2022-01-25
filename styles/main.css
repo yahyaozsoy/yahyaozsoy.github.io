@@ -59,8 +59,8 @@ body {
     }
 }
 
-svg path{
-    transition: var(--normal-trans-eio);
+path{
+    transition: fill var(--normal-trans-eio);
 }
 
 a {
@@ -263,7 +263,7 @@ footer {
 
 .card:hover{
     transform: scale(1.1); /* (150% zoom)*/
-    transition: var(--normal-trans-e);
+    transition: var(--normal-trans-eio);
 }
 
 .card:hover button{
