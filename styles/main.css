@@ -1,9 +1,28 @@
 /*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
 :root{
+    /*Fonts Options*/
     --roboto-t:'Roboto Thin', Arial, sans-serif, helvetica;
     --roboto-b:'Roboto Black', Arial Black, sans-serif, helvetica;
     --roboto: 'Roboto', Arial, sans-serif, helvetica;
     --footer-size: 20px;
+    
+    /*Color Options*/
+    --black-background: #222222;
+    --black: #191919;
+    --font-color: aliceblue;
+    --whitesmoke: whitesmoke;
+    --red: #dd4a4a;
+    --red-hover: #ff6f6f;
+    --stockfish: #52B5F8;
+    
+    /*Low Opacity*/
+    --alphazero: #ffffff00;
+    --black-a1: #0000001a;
+    --black-a08: #000000cc;
+
+    /* Transition Options */
+    --normal-trans-eio: 200ms ease-in-out;
+    --normal-trans-e: 200ms ease;
 }
 html {
     scroll-behavior: smooth;
@@ -16,8 +35,8 @@ html {
 .element::-webkit-scrollbar { width: 0 !important }
 
 body {
-    background: #222222;
-    color: #efefef;
+    background: var(--black-background);
+    color: var(--whitesmoke);
     
     background-image: url(../images/yogithub.png);
     background-repeat: repeat;
@@ -40,15 +59,18 @@ body {
     }
 }
 
+svg path{
+    transition: var(--normal-trans-eio);
+}
 
 a {
-    transition: 200ms ease-in-out;
+    transition: var(--normal-trans-eio);
     text-decoration: none;
-    color: aliceblue;
+    color: var(--font-color);
 }
 
 a:hover {
-    color: #52B5F8;
+    color: var(--stockfish);
 }
 
 header .logo a {
@@ -77,7 +99,7 @@ li {
 .topnav {
     list-style: none;
     font-family: var(--roboto-t);
-    color: aliceblue;
+    color: var(--font-color);
     margin: 50px 0 0 0;
     text-align: right;
 }
@@ -90,7 +112,7 @@ section header {
 }
 
 .home {
-    margin-top: 220px;
+    margin-top: 145px;
 }
 
 .header {
@@ -112,15 +134,28 @@ section nav {
     flex-direction: column;
     align-items: center;
 }
+.spacer {
+    aspect-ratio: 900/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
 
+.layer1 {
+    position: sticky;
+    margin-left: -15px;
+    margin-bottom: -75px;
+    z-index: -15;
+}
 section .mybutton {
-    transition: 200ms ease-in-out;
+    transition: var(--normal-trans-eio);
     font-family: var(--roboto);
     font-size: 24px;
     border: 2px solid black;
-    border-color: #dd4a4a;
-    color: whitesmoke;
-    background-color: #222222;
+    border-color: var(--red);
+    color: var(--font-color);
+    background-color: var(--black-background);
     display: inline-flex;
     padding: 6px;
     margin-top: 30px;
@@ -163,8 +198,8 @@ figure figcaption a:hover {
 }
 
 section .mybutton:hover{
-    background: #dd4a4a;
-    color: whitesmoke;
+    background: var(--red);
+    color: var(--whitesmoke);
     /*font-size: 25px;
     margin-top: 29px;*/
 }
@@ -174,22 +209,50 @@ section .mybutton:hover{
     height: 500px;
 }
 
+.footerparent {
+    font-family: var(--roboto);
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
 footer {
-    font-family: var(--roboto-t);
-    font-size: var(--footer-size);
+    /* font-family: var(--roboto-t);*/
+    font-size: var(--footer-size); 
+    color: var(--black-background);
     background-attachment: scroll;
     background-position: 0% 0%;
     position: fixed;
     width: 100%;
     text-align: left;
     bottom: 0pt;
-    background-color: #222222;
+    /*background-color: var(--black-background);*/
+}
+
+.sm-footer{
+    /* font-family: var(--roboto-t);*/
+    font-size: 30px;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    width: 99%;
+    text-align: right;
+    bottom: 0pt;
+}
+
+.sm-footer a{
+    color: var(--black-background);
+}
+.sm-footer a:hover{
+    color: var(--whitesmoke);
+    /* color: #4768fdd8; */
+    /* color:#52B5F8; */
+    /* color: rgba(7, 106, 171, .7); */
 }
 
 .card {
-    background-color: #191919;
-    color:rgb(160, 160, 160);
-    box-shadow: 0 4px 8px 5px rgba(0, 0, 0, 0.37);
+    background-color: var(--black);
+    color:#a0a0a0;
+    box-shadow: 0 4px 8px 5px #0000005e;
     max-width: 295px;
     margin: auto;
     text-align: center;
@@ -200,7 +263,7 @@ footer {
 
 .card:hover{
     transform: scale(1.1); /* (150% zoom)*/
-    transition: 200ms ease;
+    transition: var(--normal-trans-e);
 }
 
 .card:hover button{
@@ -208,12 +271,12 @@ footer {
 }
 
 .card button {
-    transition: 200ms ease-in-out;
+    transition: var(--normal-trans-eio);
     visibility: hidden;
     padding: 12px;
-    border: 2px solid #dd4a4a;
-    color: whitesmoke;
-    background-color: #191919;
+    border: 2px solid var(--red);
+    color: var(--whitesmoke);
+    background-color: var(--black);
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -223,8 +286,8 @@ footer {
 }
   
 .card button:hover {
-    background: #dd4a4a;
-    color: whitesmoke;
+    background: var(--red);
+    color: var(--whitesmoke);
 }
 
 .weirdbutton a{
@@ -238,7 +301,7 @@ footer {
 
 /* Tooltip container */
 .tooltip {
-    transition: 200ms ease-in-out;
+    transition: var(--normal-trans-eio);
     position: relative;
     display: inline-block;
 }
@@ -247,8 +310,8 @@ footer {
 .tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
-    background-color: rgba(92, 87, 87, 0.397);
-    color: #fff;
+    background-color: #5c575765;
+    color: var(--whitesmoke);
     text-align: center;
     padding: 5px 0;
     border-radius: 6px;
@@ -257,7 +320,7 @@ footer {
     /*Text decoration*/
     text-decoration: underline;
     text-decoration-style: dotted;
-    text-decoration-color: rgba(245, 245, 245, 0.479);
+    text-decoration-color: #f5f5f57a;
     text-decoration-thickness: 2px;
     
     /* Position the tooltip text */
@@ -273,7 +336,7 @@ footer {
 }
 
 .tooltip:hover{
-    color: #ff6f6f;
+    color: var(--red-hover);
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
@@ -290,13 +353,13 @@ footer {
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent rgba(92, 87, 87, 0.397) transparent;
+    border-color: transparent transparent #5c575765 transparent;
 }
 
 .dropbtn {
-    transition: 200ms ease-in-out;
-    background-color: #ffffff00;
-    color: rgb(245, 245, 245);
+    transition: var(--normal-trans-eio);
+    background-color: var(--alphazero);
+    color: var(--whitesmoke);
     padding: 0px;
     font-family: var(--roboto-t);
     font-size: 36px;
@@ -314,21 +377,21 @@ footer {
     position: absolute;
     font-size: x-large;
     text-align: left;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: var(--black-a08);
     min-width: 210px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px 8px 16px 0px var(--black-a1);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: rgb(245, 245, 245);
+    color: var(--whitesmoke);
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
   
 .dropdown-content a:hover {
-    color: #52B5F8;
+    color: var(--stockfish);
 }
   
 .dropdown:hover .dropdown-content {
@@ -336,8 +399,8 @@ footer {
 }
   
 .dropdown:hover .dropbtn {
-    background-color: #ffffff00; 
-    color: #52B5F8;
+    background-color: var(--alphazero); 
+    color: var(--stockfish);
 }
 
 .grid{
@@ -347,20 +410,6 @@ footer {
 
 .small{
     font-size: 22px;
-}
-
-.sm-footer{
-    font-family: var(--roboto-t);
-    font-size: var(--footer-size);
-    background-attachment: scroll;
-    background-position: 0% 0%;
-    position: fixed;
-    width: 99%;
-    text-align: right;
-    bottom: 0pt;
-}
-div .sm-footer:hover{
-    color: #ff6f6f;
 }
 
 @media screen and (max-width: 1140px) {
@@ -378,8 +427,8 @@ div .sm-footer:hover{
     }
 
     .dropbtn {
-        background-color: #ffffff00;
-        color: rgb(245, 245, 245);
+        background-color: var(--alphazero);
+        color: var(--whitesmoke);
         padding: 0px;
         font-family: var(--roboto-t);
         font-size: 28px;
@@ -391,14 +440,14 @@ div .sm-footer:hover{
         position: absolute;
         font-size: x-large;
         text-align: left;
-        background-color: rgba(0, 0, 0, 0.15);
+        background-color: var(--black-a08);
         min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 8px 16px 0px var(--black-a1);
         z-index: 1;
     }
     
     .dropdown-content a {
-        color: rgb(245, 245, 245);
+        color: var(--whitesmoke);
         padding: 12px 16px;
         font-size: 28px;
         text-decoration: none;
@@ -453,8 +502,8 @@ div .sm-footer:hover{
     }
 
     .dropbtn {
-        background-color: #ffffff00;
-        color: rgb(245, 245, 245);
+        background-color: var(--alphazero);
+        color: var(--whitesmoke);
         padding: 0px;
         font-family: var(--roboto-t);
         font-size: 24px;
@@ -466,14 +515,14 @@ div .sm-footer:hover{
         position: absolute;
         font-size: x-large;
         text-align: left;
-        background-color: rgba(0, 0, 0, 0.15);
+        background-color: var(--blackc-a26);
         min-width: 140px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 8px 16px 0px var(--black-a1);
         z-index: 1;
     }
     
     .dropdown-content a {
-        color: rgb(245, 245, 245);
+        color: var(--whitesmoke);
         padding: 12px 16px;
         font-size: 24px;
         text-decoration: none;
@@ -544,8 +593,8 @@ div .sm-footer:hover{
     }
 
     .dropbtn {
-        background-color: #ffffff00;
-        color: rgb(245, 245, 245);
+        background-color: var(--alphazero);
+        color: var(--whitesmoke);
         padding: 0px;
         font-family: var(--roboto-t);
         font-size: 20px;
@@ -563,14 +612,14 @@ div .sm-footer:hover{
         position: absolute;
         font-size: x-large;
         text-align: left;
-        background-color: rgba(0, 0, 0, 0.15);
+        background-color: var(--black-a08);
         min-width: 115px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+        box-shadow: 0px 8px 16px 0px var(--black-a1);
         z-index: 1;
     }
     
     .dropdown-content a {
-        color: rgb(245, 245, 245);
+        color: var(--whitesmoke);
         padding: 12px 16px;
         font-size: 15px;
         text-decoration: none;
@@ -578,7 +627,7 @@ div .sm-footer:hover{
     }
       
     .dropdown-content a:hover {
-        color: #52B5F8;
+        color: var(--stockfish);
     }
       
     .dropdown:hover .dropdown-content {
@@ -586,8 +635,8 @@ div .sm-footer:hover{
     }
       
     .dropdown:hover .dropbtn {
-        background-color: #ffffff00; 
-        color: #52B5F8;
+        background-color: var(--alphazero); 
+        color: var(--stockfish);
     }
 
     .socialmedias{
@@ -627,8 +676,8 @@ div .sm-footer:hover{
     }
 
     section .mybutton:hover {
-        background: #dd4a4a;
-        color: whitesmoke;
+        background: var(--red);
+        color: var(--whitesmoke);
         /*font-size: 20px;
         margin-top: 29px;*/
     }
