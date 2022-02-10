@@ -158,6 +158,8 @@ section .mybutton {
     background-color: var(--black-background);
     display: inline-flex;
     padding: 6px;
+    padding-right: 15px;
+    padding-left: 15px;
     margin-top: 30px;
     margin-right: 5%;
     margin-left: 5%;
