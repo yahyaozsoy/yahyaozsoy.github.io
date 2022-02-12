@@ -157,7 +157,7 @@ section .mybutton {
     color: var(--font-color);
     background-color: var(--black-background);
     display: inline-flex;
-    padding: 6px;
+    padding : 6px;
     padding-right: 15px;
     padding-left: 15px;
     margin-top: 30px;
@@ -418,6 +418,7 @@ footer {
     .sm-footer{
         width: 98.5%;
     }
+
     section nav {
         font-family: var(--roboto-t);
         font-size: 28px;
@@ -499,6 +500,7 @@ footer {
     .sm-footer{
         width: 98%;
     }
+    
     .weirdbutton a{
         margin-right: 10%;
     }
@@ -585,6 +587,11 @@ footer {
     .sm-footer{
         width: 96%;
     }
+
+    .sm-footer a{
+        font-size: 20px;
+    }
+
     .weirdbutton a{
         margin-right: 10%;
     }
