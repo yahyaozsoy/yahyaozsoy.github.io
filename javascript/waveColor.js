@@ -41,6 +41,6 @@ function Ukraine(){
         wave3.setAttribute("fill","#005bbb")
         wave5.setAttribute("fill","#ffd500")
         wave7.setAttribute("fill","#dcb802")
-        wave9.setAttribute("fill","#ba9c03")
+        wave9.setAttribute("fill","#dcb802")
     }
 }
