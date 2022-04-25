@@ -3,6 +3,7 @@
 
 //#FreeUkraine
 window.onload = Ukraine;
+window.onafterprint = Ukraine;
 
 function changeColor() {
     /*if(window.pageYOffset < 400){
