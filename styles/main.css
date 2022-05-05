@@ -218,6 +218,7 @@ section .mybutton:hover{
 }
 
 footer {
+    z-index: 99999;
     /* font-family: var(--roboto-t);*/
     font-size: var(--footer-size); 
     /* #FreeUkraine */
@@ -417,6 +418,52 @@ footer {
 .small{
     font-size: 22px;
 }
+
+.collapsible {
+    z-index: 1;
+    background-position: 0% 0%;
+    position: relative;
+    background-color: var(--alphazero);
+    color: var(--black);
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: var(--footer-size);
+    background-color: var(--alphazero);
+    position: relative;
+    border: 0;
+    border-top: 20px solid var(--whitesmoke);
+    border-radius: 100px;
+	display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -90px;
+}
+
+.collapsible:after {
+    content: 'SEEN ONES \002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.collapsible_active:after {
+    content: "SEEN ONES \2212";
+}
+
+.collapsible_content {
+    position: relative;
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: var(--normal-trans-eio);
+    background-color: var(--alphazero);
+}
+
 
 @media screen and (max-width: 1140px) {
     .sm-footer{
