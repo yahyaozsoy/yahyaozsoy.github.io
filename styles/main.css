@@ -218,7 +218,7 @@ section .mybutton:hover{
 }
 
 footer {
-    z-index: 99999;
+    z-index: 9;
     /* font-family: var(--roboto-t);*/
     font-size: var(--footer-size); 
     /* #FreeUkraine */
@@ -233,6 +233,7 @@ footer {
 }
 
 .sm-footer{
+    z-index: 15;
     /* font-family: var(--roboto-t);*/
     font-size: 30px;
     background-attachment: scroll;
