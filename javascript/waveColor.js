@@ -2,8 +2,12 @@
 //document.onscroll=function() {changeColor()}
 
 //#FreeUkraine
-window.onload = Ukraine;
-window.onafterprint = Ukraine;
+/*window.onload = Ukraine;
+window.onafterprint = Ukraine;*/
+
+//#Grief
+window.onload = Grief;
+window.onafterprint = Grief;
 
 function changeColor() {
     /*if(window.pageYOffset < 400){
@@ -44,4 +48,12 @@ function Ukraine(){
         wave7.setAttribute("fill","#ffd500")
         wave9.setAttribute("fill","#dcb802")
     }
+}
+
+function Grief(){
+    wave1.setAttribute("fill", "#303030")
+    wave3.setAttribute("fill", "#292929")
+    wave5.setAttribute("fill", "#222222")
+    wave7.setAttribute("fill", "#1B1B1B")
+    wave9.setAttribute("fill", "#151515")
 }
