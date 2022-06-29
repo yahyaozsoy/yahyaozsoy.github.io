@@ -220,8 +220,10 @@ footer {
     z-index: 9;
     /* font-family: var(--roboto-t);*/
     font-size: var(--footer-size); 
-    /* #FreeUkraine */
-    color: var(--black-background);
+    /* #FreeUkraine 
+    color: var(--black-background);*/
+    /* #Grief*/
+    color: var(--font-color);
     background-attachment: scroll;
     background-position: 0% 0%;
     position: fixed;
@@ -244,12 +246,17 @@ footer {
 }
 
 .sm-footer a{
-    /* #FreeUkraine */
-    color: var(--black-background);
+    /* #FreeUkraine 
+    color: var(--black-background);*/
+    /* #Grief*/
+    color: var(--font-color);
 }
 .sm-footer a:hover{
-    /* #FreeUkraine */
-    color: var(--whitesmoke);
+    /* #FreeUkraine 
+    color: var(--whitesmoke);*/
+    
+    /* #Grief*/
+    color: var(--red-hover);
     /* --------------------- */
     /* color: #4768fdd8; */
     /* color:#52B5F8; */
