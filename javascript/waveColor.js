@@ -1,13 +1,13 @@
-//Deafult
-//document.onscroll=function() {changeColor()}
+/*Deafult
+document.onscroll=function() {changeColor()}*/
 
 //#FreeUkraine
-/*window.onload = Ukraine;
-window.onafterprint = Ukraine;*/
+window.onload = Ukraine;
+window.onafterprint = Ukraine;
 
 //#Grief
-window.onload = Grief;
-window.onafterprint = Grief;
+/*window.onload = Grief;
+window.onafterprint = Grief;*/
 
 function changeColor() {
     /*if(window.pageYOffset < 400){
