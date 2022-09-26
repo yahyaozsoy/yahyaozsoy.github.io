@@ -321,7 +321,7 @@ footer {
 }
  
 /* Tooltip text */
-.tooltip .tooltiptext {
+.tooltip .tooltiptext{
     visibility: hidden;
     width: 120px;
     background-color: #5c575765;
