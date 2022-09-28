@@ -9,12 +9,12 @@
     /*Color Options*/
     --black-background: #222222;
     --black: #191919;
-    --font-color: whitesmoke;
-    --whitesmoke: aliceblue;
+    --font-color: #0a0a0a;
+    --whitesmoke: rgb(225, 225, 225);
     --red: #dd4a4a;
     --red-hover: #ff6f6f;
     --stockfish: #52B5F8;
-    --chess-bg: #312e2b;
+    --chess-bg: #ced1d4;
     
     /*Low Opacity*/
     --alphazero: #ffffff00;
@@ -26,6 +26,9 @@
     --normal-trans-e: 200ms ease;
 
     --padding-LandR: 0px 20px 5px 10px;
+    
+    --sidebar: #1a1a1a;
+    --sidebar-inside: #dadada;
 }
 html {
     scroll-behavior: smooth;
@@ -79,10 +82,47 @@ header .ncal a {
     top: -50px;
 }
 
-.flex-row{
+.flex-col{
     display: flex;
     flex-direction: column;
+    background-color: var(--sidebar-inside); 
+    visibility: hidden;
 }
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+.menuselector {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1.5vh;
+    text-align: center;
+    width: 100vw;
+    margin-top: -3%;
+    color: var(--whitesmoke);
+    background-color: var(--sidebar);
+}
+
+.active {
+    background-color: var(--sidebar-inside);
+    color: var(--font-color);
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.activeflex{
+    visibility: visible;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 5.34vh;
+}
+
+/* .flex-col:last-child{
+    position: absolute;
+} */
 
 .sidenav {
     font-family: var(--roboto-t);
@@ -92,7 +132,7 @@ header .ncal a {
     z-index: 1;
     top: 0;
     right: 0;
-    background-color: #22201e; 
+    background-color: var(--sidebar);
     overflow-x: hidden;
     padding-top: 10px;
 }
@@ -101,13 +141,14 @@ header .ncal a {
     padding: 6px 10px 6px 16px;
     text-decoration: none;
     font-size: small;
-    color: #c7c7c6;
+    width: 17vw;
+    color: #383839;
     display: block;
 }
 
 .sidenav a:hover {
-    color: #f1f1f1;
-    background-color: #f1f1f126;
+    color: #383839;
+    background-color: #38383926;
 }
 
 .matches {
@@ -119,6 +160,7 @@ header .ncal a {
     width: 90%;
     padding: var(--padding-LandR);
     display: inline-block;
+    font-family: var(--roboto-t);
 }
 
 .divider {
@@ -126,8 +168,10 @@ header .ncal a {
 }
 
 .results{
-    position: relative;
-    margin-top: -5.6%;
+    display: block;
+    position: absolute;
+    margin-top: -1.8vh;
+    width: 17vw;
     text-align: right;
 }
 
@@ -136,11 +180,13 @@ header .ncal a {
     font-size: x-large;
 }
 
-li:first-child {
+
+li{
     float: left; 
 }
 
 li {
+    font-family: var(--roboto-t);
     display: inline-block;
     padding-right: 7%;
     margin: 10px 0 0 0;
@@ -148,6 +194,7 @@ li {
 }
 
 .roundName {
+    margin-top: -8vh;
     padding: 0.1%;
     font-size: 50px;
     font-family: var(--roboto-t);
@@ -157,9 +204,17 @@ li {
     margin-left: -5%; 
     text-align: left;
     text-indent: 25px; 
-    border: 2px none var(--stockfish);
+    border: 4px none var(--stockfish);
     border-bottom-style: dashed;
-    border-radius: 15px;
+    border-radius: 5px;
+}
+
+.headline{
+    display: block;
+    width: 50vw;
+    padding-top: 10vh;
+    margin-bottom: -11vh;
+    text-align: center;
 }
 
 .topnav {
@@ -331,8 +386,8 @@ footer {
 }
 
 .card {
-    background-color: var(--black);
-    color:#a0a0a0;
+    background-color: var(--sidebar-inside);
+    color: var(--black-background);
     box-shadow: 0 4px 8px 5px #0000005e;
     max-width: 295px;
     margin: auto;
@@ -355,9 +410,9 @@ footer {
     transition: var(--normal-trans-eio);
     visibility: hidden;
     padding: 12px;
-    border: 2px solid var(--red);
-    color: var(--whitesmoke);
-    background-color: var(--black);
+    border: 2px solid var(--stockfish);
+    color: var(--font-color);
+    background-color: var(--alphazero);
     text-align: center;
     cursor: pointer;
     width: 100%;
@@ -367,7 +422,7 @@ footer {
 }
   
 .card button:hover {
-    background: var(--red);
+    background: var(--stockfish);
     color: var(--whitesmoke);
 }
 
@@ -735,9 +790,9 @@ footer {
         font-size: 20px;
     }
 
-    .sidenav {padding-top: 15px;}
-
-    .sidenav a {font-size: 18px;}
+    .sidenav {visibility: hidden;}
+    .active{visibility: hidden;}
+    .activeflex{visibility: hidden;}
 
     .dropbtn {
         background-color: var(--alphazero);
@@ -809,7 +864,12 @@ footer {
         left: 150%;
     }
 
+    li:first-child{
+        float: left;
+    }
+    
     li {
+        float: right;
         font-size: 20px;
     }
 
@@ -830,6 +890,6 @@ footer {
     }
     iframe{
         width: fit-content;
-        height: fit-content;
+        height: 500px;
     }
 }
