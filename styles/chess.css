@@ -157,7 +157,7 @@ header .ncal a {
 }
 
 .labels{
-    width: 90vw;
+    width: 90%;
     padding: var(--padding-LandR);
     display: inline-block;
     font-family: var(--roboto-t);
