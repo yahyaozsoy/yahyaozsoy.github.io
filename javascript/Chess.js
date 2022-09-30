@@ -36,9 +36,9 @@ function logNamesandPoints(){
                 data.push(row);
             })
             
-            for(let i = 0; i < nameOfChamp.length; i++) {
-                nameOfChamp[i].textContent = data[1+i].NameSurname;
-                resultsOfChamp[i].textContent = data[1+i].Point;
+            for(let i = 1; i < nameOfChamp.length; i++) {
+                nameOfChamp[i].textContent = data[i].NameSurname;
+                resultsOfChamp[i].textContent = data[i].Point;
             }
         })
 }
