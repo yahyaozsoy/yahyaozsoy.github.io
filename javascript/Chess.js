@@ -19,7 +19,6 @@ function logNamesandPoints(){
         .then(rep => {
             //Remove additional text and extract only JSON:
             const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
-            console.log(jsonData)
  
  
             //Extract column labels
