@@ -157,7 +157,7 @@ header .ncal a {
 }
 
 .labels{
-    width: 90%;
+    width: 90vw;
     padding: var(--padding-LandR);
     display: inline-block;
     font-family: var(--roboto-t);
@@ -171,7 +171,7 @@ header .ncal a {
     display: block;
     position: absolute;
     margin-top: -1.8vh;
-    width: 17vw;
+    padding-left: 16vw;
     text-align: right;
 }
 
@@ -179,7 +179,6 @@ header .ncal a {
     padding: 0px 0px 0px 10px;
     font-size: x-large;
 }
-
 
 li{
     float: left; 
@@ -191,6 +190,16 @@ li {
     padding-right: 7%;
     margin: 10px 0 0 0;
     font-size: 36px;
+}
+
+.namepoint:first-child{
+    float: left;
+}
+
+.namepoint{
+    display: flex;
+    flex-direction: row;
+    padding-right: 1vw;
 }
 
 .roundName {
