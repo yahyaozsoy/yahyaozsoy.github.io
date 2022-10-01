@@ -4,7 +4,7 @@ window.onafterprint = logNamesandPoints;
 function logNamesandPoints(){
     const sheetId = '1lIxkHORiR1LZuLCI7yY0kWw0XgMztvAR9iQ2KnSiY6E';
     const base = `https://docs.google.com/spreadsheets/d/${sheetId}/gviz/tq?`;
-    const sheetName = 'Tournament Data';
+    const sheetName = 'NAPData';
     const query = encodeURIComponent('Select *');
     const url = `${base}&sheet=${sheetName}&td=${query}`;
 
@@ -19,7 +19,6 @@ function logNamesandPoints(){
         .then(rep => {
             //Remove additional text and extract only JSON:
             const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
- 
  
             //Extract column labels
             jsonData.table.cols.forEach((heading) => {
@@ -37,8 +36,11 @@ function logNamesandPoints(){
             })
             
             for(let i = 1; i < nameOfChamp.length; i++) {
-                nameOfChamp[i].textContent = data[i].NameSurname;
-                resultsOfChamp[i].textContent = data[i].Point;
+                if(data[i].NameSurname != " " ){
+                    nameOfChamp[i].textContent = data[i].NameSurname;
+                    resultsOfChamp[i].textContent = data[i].Point;
+                }
             }
         })
+
 }
