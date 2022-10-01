@@ -347,7 +347,10 @@ section .mybutton:hover{
     margin: 0 auto;
     padding: 35px 0;
 }
-
+.chessboard{
+    padding-right: 50vw;
+    align-self: stretch;
+}
 footer {
     z-index: 9;
     /* font-family: var(--roboto-t);*/
