@@ -14,12 +14,12 @@ function logNamesandPoints(){
     var nameOfChamp = document.getElementsByClassName("champName");
     var resultsOfChamp = document.getElementsByClassName("results");
 
+    
     fetch(url)
-        .then(res => res.text())
-        .then(rep => {
-            //Remove additional text and extract only JSON:
-            const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
- 
+    .then(res => res.text())
+    .then(rep => {
+        //Remove additional text and extract only JSON:
+        const jsonData = JSON.parse(rep.substring(47).slice(0, -2));
             //Extract column labels
             jsonData.table.cols.forEach((heading) => {
                 if (heading.label) {

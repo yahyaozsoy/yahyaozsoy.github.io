@@ -161,6 +161,7 @@ header .ncal a {
     padding: var(--padding-LandR);
     display: inline-block;
     font-family: var(--roboto-t);
+    text-transform: capitalize;
 }
 
 .divider {
