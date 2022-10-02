@@ -29,6 +29,8 @@
     
     --sidebar: #1a1a1a;
     --sidebar-inside: #dadada;
+
+    --card-color: #262422;
 }
 html {
     scroll-behavior: smooth;
@@ -319,6 +321,12 @@ section .mybutton {
 	height: 250px;
 }
 
+.features figure .chessboard {
+	border-radius: 2%;
+	width: 250px;
+	height: 250px;
+}
+
 figure figcaption {
     font-family: var(--roboto-b);
     font-size: 36px;
@@ -399,8 +407,8 @@ footer {
 }
 
 .card {
-    background-color: var(--sidebar-inside);
-    color: var(--black-background);
+    background-color: var(--card-color);
+    color: var(--whitesmoke);
     box-shadow: 0 4px 8px 5px #0000005e;
     max-width: 295px;
     margin: auto;
@@ -424,7 +432,7 @@ footer {
     visibility: hidden;
     padding: 12px;
     border: 2px solid var(--stockfish);
-    color: var(--font-color);
+    color: var(--whitesmoke);
     background-color: var(--alphazero);
     text-align: center;
     cursor: pointer;
