@@ -35,7 +35,7 @@ function logNamesandPoints(){
                 data.push(row);
             })
             
-            for(let i = 1; i < nameOfChamp.length; i++) {
+            for(let i = 0; i < nameOfChamp.length; i++) {
                 if(data[i].NameSurname != " " ){
                     nameOfChamp[i].textContent = data[i].NameSurname;
                     resultsOfChamp[i].textContent = data[i].Point;
