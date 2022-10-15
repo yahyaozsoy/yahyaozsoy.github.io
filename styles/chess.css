@@ -99,9 +99,9 @@ header .ncal a {
     border: none;
     outline: none;
     cursor: pointer;
-    padding: 1.5vh;
+    padding: 0.5rem;
     text-align: center;
-    width: 100vw;
+    width: 15rem;
     margin-top: -3%;
     color: var(--whitesmoke);
     background-color: var(--sidebar);
@@ -119,7 +119,7 @@ header .ncal a {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 5.34vh;
+    top: 2rem;
 }
 
 /* .flex-col:last-child{
@@ -129,7 +129,7 @@ header .ncal a {
 .sidenav {
     font-family: var(--roboto-t);
     height: 100%; 
-    width: 300px; 
+    width: 18rem; 
     position: fixed; 
     z-index: 1;
     top: 0;
@@ -143,7 +143,7 @@ header .ncal a {
     padding: 6px 10px 6px 16px;
     text-decoration: none;
     font-size: small;
-    width: 17vw;
+    width: 10rem;
     color: #383839;
     display: block;
 }
@@ -159,7 +159,7 @@ header .ncal a {
 }
 
 .labels{
-    width: 90vw;
+    width: 30rem;
     padding: var(--padding-LandR);
     display: inline-block;
     font-family: var(--roboto-t);
@@ -173,8 +173,16 @@ header .ncal a {
 .results{
     display: block;
     position: absolute;
-    margin-top: -1.8vh;
-    padding-left: 16vw;
+    margin-top: -0.75rem;
+    padding-left: 14rem;
+    text-align: right;
+}
+
+.resultsMenu{
+    display: block;
+    position: absolute;
+    margin-top: -1rem;
+    padding-left: 15rem;
     text-align: right;
 }
 

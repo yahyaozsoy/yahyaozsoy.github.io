@@ -12,7 +12,7 @@ function logNamesandPoints(){
     const colz = [];
 
     var nameOfChamp = document.getElementsByClassName("champName");
-    var resultsOfChamp = document.getElementsByClassName("results");
+    var resultsOfChamp = document.getElementsByClassName("resultsMenu");
 
     
     fetch(url)
