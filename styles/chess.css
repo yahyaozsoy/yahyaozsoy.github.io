@@ -160,6 +160,7 @@ header .ncal a {
 
 .labels{
     width: 30rem;
+    height: 0.8rem;
     padding: var(--padding-LandR);
     display: inline-block;
     font-family: var(--roboto-t);
@@ -792,10 +793,18 @@ footer {
     }
     
     header .ncal a {
-        height: 23vh;
-	    width: 25vw;
-        background-size: 23vh;
+        height: 10rem;
+	    width: 10rem;
+        background-size: 15rem;
         top: -25px;
+    }
+
+    .headline{
+        margin-left: 3rem;
+    }
+
+    .roundName{
+        font-size: 2rem;
     }
 
     .card{
