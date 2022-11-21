@@ -371,6 +371,7 @@ section .mybutton:hover{
     padding: 35px 0;
 }
 .chessboard{
+    padding-top: 4vh;
     padding-right: 50vw;
     align-self: stretch;
 }
