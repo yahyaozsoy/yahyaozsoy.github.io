@@ -87,7 +87,8 @@ header .ncal a {
 .flex-col{
     display: flex;
     flex-direction: column;
-    background-color: var(--sidebar-inside); 
+    height: 2vh;
+    background-color: var(--sidebar-inside);
     visibility: hidden;
 }
 .flex-row{
@@ -129,7 +130,7 @@ header .ncal a {
 .sidenav {
     font-family: var(--roboto-t);
     height: 100%; 
-    width: 18rem; 
+    width: 17rem; 
     position: fixed; 
     z-index: 1;
     top: 0;
@@ -160,7 +161,7 @@ header .ncal a {
 
 .labels{
     width: 30rem;
-    height: 14px;
+    height: 1.9vh;
     padding: var(--padding-LandR);
     display: inline-block;
     font-family: var(--roboto-t);
@@ -709,7 +710,7 @@ footer {
     }
 
     .features figure img {
-        border-radius: 10%;
+        border-radius: 5%;
         width: 200px;
         height: 200px;
     }    
@@ -828,7 +829,7 @@ footer {
     .sm-footer{
         width: 96%;
     }
-
+    
     .sm-footer a{
         font-size: 20px;
     }
