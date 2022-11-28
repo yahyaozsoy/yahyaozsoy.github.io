@@ -14,14 +14,14 @@
         src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 </head>
 
-<body>
+<body id="noscrollbar">
     <header>
         <nav>
             <ul class="topnav">
                 <li class="ncal"><a href="./chess#active-matches"></a></li>
                 <li><a style="position: relative; margin-left: -5vw;" href="./games/dailypuzzle">Günün Bulmacası <i class="fa-solid fa-graduation-cap"></i></a></li>
                 <li><a style="position: relative; margin-left: -3vw;" href="./rules.pdf" target="_blank">Kurallar <i class="fa-solid fa-scale-balanced"></i></a></li>
-                <li><a style="position: relative; margin-left: -3vw;" href="./info.html" target="_blank">Duyurular <i class="fa-solid fa-bullhorn"></i></a></li>
+                <li><a style="position: relative; margin-left: -3vw;" href="./info">Duyurular <i class="fa-solid fa-bullhorn"></i></a></li>
             </ul>
         </nav>
     </header>
@@ -35,12 +35,37 @@
             <button onclick="showContent()" class="menuselector active"><i class="fa-solid fa-chess"></i> Oyunlar</i></button>
             <button onclick="showContent()" class="menuselector"><i class="fa-solid fa-user"></i> Sonuçlar</button>
         </div>
-        <div class="flex-col activeflex">
+        <div class="flex-col activeflex" id="chessScrollbar">
             <!-- <a href="#6">6. Tur</a>
                 <a href="#5">5. Tur</a>
                 <a href="#4">4. Tur</a>
-                <a href="#3">3. Tur</a>
-                <a href="#2">2. Tur</a> -->
+                <a href="#3">3. Tur</a> -->
+            
+            <li style="padding-bottom: 2%;">2. Tur</li>
+            <a href="./games/muhammedcanosama">
+                <div class="labels">
+                    <b>Muhammed Can Görgü</b>
+                    <!-- (8000) 🇹🇷 -->
+                    <div class="results"><b>0</b></div>
+                </div>
+                <div class="labels">
+                    <b>Osama Alhomsi</b>
+                    <!-- (8000) 🇹🇷 -->
+                    <div class="results"><b>1</b></div>
+                </div>
+            </a>
+            <a href="./games/ayhanzelisan">
+                <div class="labels">
+                    <b>Ahyan Genç</b>
+                    <!-- (8000) 🇹🇷 -->
+                    <div class="results"><b>1</b></div>
+                </div>
+                <div class="labels">
+                    <b>Zelişan Nur Badur</b>
+                    <!-- (8000) 🇹🇷 -->
+                    <div class="results"><b>0</b></div>
+                </div>
+            </a>
             <li style="padding-bottom: 3%;">1. Tur</li>
             <!-- Example match  -->
             <a href="./games/rojhatosman">
@@ -138,7 +163,8 @@
                 </div>
             </a>
         </div>
-        <div class="flex-col">
+
+        <div class="flex-col" id="chessScrollbar">
             <div class="namepoint" style="padding-bottom: 3%;">
                 <li class="labels">Ad-Soyad</li><li>Puan</li>
             </div>
@@ -297,7 +323,7 @@
         </header>
     </section>
     <section class="features">
-        <img style="height: 80vh;" src="../images/chess/pngs/Second Tour of November.png" alt="tur1 1">
+        <img style="height: 80vh;" src="../images/chess/pngs/Second Tour of November.png" alt="tur2">
     </section>
     <section>
         <header class="header">
