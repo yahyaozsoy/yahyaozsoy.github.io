@@ -492,6 +492,13 @@ footer {
     margin-bottom: -0%;
 }
 
+.card p.date{
+    color: var(--sidebar-inside);
+    font-size: medium;
+    padding-right: .5rem;
+    float: right;
+}
+
 .weirdbutton a{
     margin-left: 0%;
 }
