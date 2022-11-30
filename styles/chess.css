@@ -432,6 +432,7 @@ footer {
     color: var(--black-background);
     /* #Grief
     color: var(--font-color);*/
+    padding-right: 17rem;
 }
 .sm-footer a:hover{
     /* #FreeUkraine */
