@@ -198,7 +198,7 @@ header .ncal a {
     display: block;
     position: absolute;
     margin-top: -0.75rem;
-    padding-left: 14rem;
+    padding-left: 13.25rem;
     text-align: right;
 }
 
@@ -206,7 +206,7 @@ header .ncal a {
     display: block;
     position: absolute;
     margin-top: -1rem;
-    padding-left: 15rem;
+    padding-left: 14.25rem;
     text-align: right;
 }
 
@@ -422,7 +422,7 @@ footer {
     background-attachment: scroll;
     background-position: 0% 0%;
     position: fixed;
-    width: 99%;
+    width: 81%;
     text-align: right;
     bottom: 0pt;
 }
@@ -432,7 +432,6 @@ footer {
     color: var(--black-background);
     /* #Grief
     color: var(--font-color);*/
-    padding-right: 17rem;
 }
 .sm-footer a:hover{
     /* #FreeUkraine */
