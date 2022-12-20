@@ -18,8 +18,8 @@ var snowStorm = (function (window, document) {
     this.autoStart = true;          // Whether the snow should start automatically or not.
     this.excludeMobile = false;      // Snow is likely to be bad news for mobile phones' CPUs (and batteries.) Enable at your own risk.
     this.flakesMax = 140;           // Limit total amount of snow made (falling + sticking)
-    this.flakesMaxActive = 70;      // Limit amount of snow falling at once (less = lower CPU use)
-    this.animationInterval = 50;    // Theoretical "miliseconds per frame" measurement. 20 = fast + smooth, but high CPU use. 50 = more conservative, but slower
+    this.flakesMaxActive = 80;      // Limit amount of snow falling at once (less = lower CPU use)
+    this.animationInterval = 40;    // Theoretical "miliseconds per frame" measurement. 20 = fast + smooth, but high CPU use. 50 = more conservative, but slower
     this.useGPU = true;             // Enable transform-based hardware acceleration, reduce CPU load.
     this.className = null;          // CSS class name for further customization on snow elements
     this.excludeMobile = false;      // Snow is likely to be bad news for mobile phones' CPUs (and batteries.) By default, be nice.
@@ -31,7 +31,7 @@ var snowStorm = (function (window, document) {
     this.targetElement = null;      // element which snow will be appended to (null = document.body) - can be an element ID eg. 'myDiv', or a DOM node reference
     this.useMeltEffect = true;      // When recycling fallen snow (or rarely, when falling), have it "melt" and fade out if browser supports it
     this.useTwinkleEffect = false;  // Allow snow to randomly "flicker" in and out of view while falling
-    this.usePositionFixed = false;  // true = snow does not shift vertically when scrolling. May increase CPU load, disabled by default - if enabled, used only where supported
+    this.usePositionFixed = true;  // true = snow does not shift vertically when scrolling. May increase CPU load, disabled by default - if enabled, used only where supported
     this.usePixelPosition = false;  // Whether to use pixel values for snow top/left vs. percentages. Auto-enabled if body is position:relative or targetElement is specified.
 
     // --- less-used bits ---
@@ -41,8 +41,8 @@ var snowStorm = (function (window, document) {
     this.flakeRightOffset = 0;      // Right margin/gutter space on edge of container
     this.flakeWidth = 16;            // Max pixel width reserved for snow element
     this.flakeHeight = 16;           // Max pixel height reserved for snow element
-    this.vMaxX = 6;                 // Maximum X velocity range for snow
-    this.vMaxY = 5;                 // Maximum Y velocity range for snow
+    this.vMaxX = 12;                 // Maximum X velocity range for snow
+    this.vMaxY = 10;                 // Maximum Y velocity range for snow
     this.zIndex = 0;                // CSS stacking order applied to each snowflake
 
     // --- "No user-serviceable parts inside" past this point, yadda yadda ---

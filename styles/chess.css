@@ -1,20 +1,58 @@
 /*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
 :root{
     /*Fonts Options*/
-    --roboto-t:'Roboto Thin', Arial, sans-serif, helvetica;
+    /*--roboto-t:'Roboto Thin', Arial, sans-serif, helvetica;
     --roboto-b:'Roboto Black', Arial Black, sans-serif, helvetica;
     --roboto: 'Roboto', Arial, sans-serif, helvetica;
-    --footer-size: 20px;
+    --footer-size: 20px;*/
     
     /*Color Options*/
-    --black-background: #222222;
+    /*--black-background: #222222;
     --black: #191919;
     --font-color: #0a0a0a;
     --whitesmoke: rgb(225, 225, 225);
     --red: #dd4a4a;
     --red-hover: #ff6f6f;
     --stockfish: #52B5F8;
-    --chess-bg: #ced1d4;
+    --chess-bg: #ced1d4;*/
+    
+    /*Low Opacity*/
+    /*--alphazero: #ffffff00;
+    --black-a1: #0000001a;
+    --black-a08: #000000cc;*/
+
+    /* Transition Options */
+    /*--normal-trans-eio: 200ms ease-in-out;
+    --normal-trans-e: 200ms ease;
+
+    --padding-LandR: 0px 20px 5px 10px;
+    
+    --sidebar: #1a1a1a;
+    --sidebar-inside: #dadada;
+    --sidebar-color: #383839;
+    --sidebar-color-hover: #38383926;
+
+    --card-color: #262422;
+    --card-font-color: #dadada;
+    */
+
+
+    /*Xmas Update*/
+    /*Fonts Options*/
+    --roboto-t:'Roboto Thin', Arial, sans-serif, helvetica;
+    --roboto-b:'Roboto Black', Arial Black, sans-serif, helvetica;
+    --roboto: 'Roboto', Arial, sans-serif, helvetica;
+    --footer-size: 20px;
+    
+    /*Color Options*/
+    --black-background: whitesmoke;
+    --black: #191919;
+    --font-color: #FFD700;
+    --whitesmoke: rgb(225, 225, 225);
+    --red: #dd4a4a;
+    --red-hover: #ff6f6f;
+    --stockfish: #33724c;
+    --chess-bg: #4c83c7;
     
     /*Low Opacity*/
     --alphazero: #ffffff00;
@@ -27,10 +65,13 @@
 
     --padding-LandR: 0px 20px 5px 10px;
     
-    --sidebar: #1a1a1a;
-    --sidebar-inside: #dadada;
+    --sidebar: #A72608;
+    --sidebar-inside: #d7263d;
+    --sidebar-color: #f8f8f8;
+    --sidebar-color-hover: #f8f8f826;
 
-    --card-color: #262422;
+    --card-color: rgb(100, 70, 60);
+    --card-font-color: #187e3f;
 }
 
 html {
@@ -141,6 +182,7 @@ header .ncal a {
     right: 0;
     background-color: var(--sidebar);
     padding-top: 10px;
+    border-left: 4px solid var(--stockfish);
 }
 
 .sidenav a {
@@ -148,7 +190,7 @@ header .ncal a {
     text-decoration: none;
     font-size: small;
     width: 20rem;
-    color: #383839;
+    color: var(--sidebar-color);
     display: block;
 }
 
@@ -173,8 +215,8 @@ header .ncal a {
 }
 
 .sidenav a:hover {
-    color: #383839;
-    background-color: #38383926;
+    color: var(--sidebar-color);
+    background-color: var(--sidebar-color-hover);
 }
 
 .matches {
@@ -214,6 +256,13 @@ header .ncal a {
 .sidenav li{
     padding: 0px 0px 0px 10px;
     font-size: x-large;
+}
+
+.sidenav .champName{
+    color: var(--whitesmoke);
+}
+.sidenav .resultsMenu{
+    color: var(--whitesmoke);
 }
 
 li{
@@ -436,7 +485,7 @@ footer {
 }
 .sm-footer a:hover{
     /* #FreeUkraine */
-    color: var(--stockfish);
+    color: var(--font-color);
     
     /* #Grief
     color: var(--red-hover);*/
@@ -494,8 +543,9 @@ footer {
 }
 
 .card p.date{
-    color: var(--sidebar-inside);
+    color: var(--card-font-color);
     font-size: medium;
+    font-weight: 600;
     padding-right: .5rem;
     float: right;
 }
