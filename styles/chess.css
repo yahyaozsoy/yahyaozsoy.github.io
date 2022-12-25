@@ -248,7 +248,7 @@ header .ncal a {
 .resultsMenu{
     display: block;
     position: absolute;
-    margin-top: -1rem;
+    margin-top: -2.5vh;
     padding-left: 14.25rem;
     text-align: right;
 }
