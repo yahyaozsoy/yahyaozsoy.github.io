@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: yahyaozsoy.github.io
+Token: 25ce1666208c852ae7362b7218fbd984aceeb2e608530550d7542c7fad9df68a
