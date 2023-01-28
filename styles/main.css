@@ -201,6 +201,7 @@ figure figcaption a:hover {
 section .mybutton:hover{
     background: var(--red);
     color: var(--whitesmoke);
+    transform: scale(1.10);
     /*font-size: 25px;
     margin-top: 29px;*/
 }
@@ -473,6 +474,78 @@ footer {
     background-color: var(--alphazero);
 }
 
+
+.nameOWhite,
+.urlOGame,
+.nameOBlack {
+    font-family: var(--roboto-b);
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+#nameOWhite,
+#urlOGame,
+#nameOBlack {
+    font-family: var(--roboto);
+    font-size: larger;
+    border: 2px solid var(--stockfish);
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+#submit,
+.copy_btn {
+    font-size: 1.3rem;
+    padding: 0.2rem 0.8rem;
+    margin-top: 2rem;
+    color: var(--whitesmoke);
+    background-color: transparent;
+    border: 2px solid var(--red);
+    outline: none;
+    border-radius: 0.5rem;
+
+    transition: var(--normal-trans-eio);
+}
+
+.copy_btn {
+    margin: 0 0 0 1rem;
+    height: 3.5rem;
+}
+
+#submit:hover,
+.copy_btn:hover {
+    background-color: var(--red);
+    cursor: pointer;
+    transform: scale(1.10);
+}
+
+.result {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+}
+
+div#contains {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15rem;
+}
+
+textarea {
+    width: 21rem;
+    border: 2px solid var(--black-background);
+    border-radius: 0.5rem;
+    font-family: var(--roboto);
+}
+
+input[type="text"],
+input[type="urlOGame"] {
+    width: 400px;
+    height: 50px;
+}
 
 @media screen and (max-width: 1140px) {
     .sm-footer{

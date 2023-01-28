@@ -7,6 +7,7 @@
         <title>Yahya ÖZSOY</title>
         <link rel="preconnect" href="https://fonts.gstatic.com"> 	
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!--loader-->       <script type=module src="../javascript/assetsLib.js"></script>
         <!--icon on tab-->  <link rel="icon" href="../images/logo.png">
         <!--icons-->     <script src="https://kit.fontawesome.com/b6c5c6dbd1.js" crossorigin="anonymous"></script>
         <!--main-->      <link rel="stylesheet" href="../styles/main.css">
@@ -15,20 +16,7 @@
         <script data-ad-client="ca-pub-9325217213056739" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </head>
     <body>
-        <header>
-            <nav>
-                <ul class="topnav">
-                    <li class="logo"><a href="../"></a></li>
-                    <li><a href="../"><b>ANASAYFA</b></a></li>
-                    <li class="dropdown">
-                        <button class="dropbtn"><b>PROJELERİM</b></button>
-                        <div class="dropdown-content">
-                          <a href="./projects#okul">OKUL</a>
-                        </div>
-                    </li>
-                </ul>
-            </nav>
-        </header>
+        <as-header></as-header>
 
         <!--For Xmas
         <script src="../javascript/snowStorm.js"></script>-->
@@ -98,14 +86,8 @@
                         <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
                     </span> Yahya ÖZSOY</b>
             </footer>
-            <div class="sm-footer">
-                <a href="https://github.com/yahyaozsoy" target="_blank" class="fa-brands fa-github"></a>
-                <a href="https://www.instagram.com/yahyaozsoy34/" target="_blank" class="fa-brands fa-instagram"></a>
-                <a href="https://www.facebook.com/yahya.zsoy/" target="_blank" class="fa-brands fa-facebook-f"></a>
-                <a href="https://twitter.com/YahyaOzsoy_" target="_blank" class="fa-brands fa-twitter"></a>
-                <a href="https://www.youtube.com/yahyaoyundaofficial" target="_blank" class="fa-brands fa-youtube"></a>
-                <a href="https://discord.com/users/347321474748776450" target="_blank" class="fa-brands fa-discord"></a>
-            </div>
+
+            <as-footer></as-footer>
         
             <script>
                 const tween = KUTE.fromTo(

@@ -16,24 +16,22 @@
         <script data-ad-client="ca-pub-9325217213056739" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </head>
     <body>
-        <as-header></as-header>
-
-        <!--For Xmas
-        <script src="../javascript/snowStorm.js"></script>-->
-
-        <section>
-
-        </section>
-        <section class="features">
-            <div style="width: 100%;">
-                <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;">
-                    <iframe frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://www.youtube.com/embed/fztKOcSVtGg" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> 
-                </div> 
-            </div>
-            <figure>
-                <a href="https://youtu.be/fztKOcSVtGg" target="_blank" class="mybutton">Video Sayfası</a>
-            </figure>
-        </section>
+      <as-header></as-header>
+      
+      <div id="contains">
+          <label for="nameOWhite" class="nameOWhite">White's Name</label>
+          <input type="text" id="nameOWhite" name="nameOWhite">
+          <label for="nameOBlack" class="nameOBlack">Black's Name</label>
+          <input type="text" id="nameOBlack" name="nameOBlack">
+          <label for="urlOGame" class="urlOGame">Game's URL</label>
+          <input type="urlOGame" id="urlOGame" name="urlOGame">
+          <button id="submit">Generate</button>
+      </div>
+      <div class="result">
+          <textarea class="result_text" type="text" rows="5"></textarea>
+          <button class="copy_btn"><i class="fas fa-clipboard"></i></button>
+      </div>
+      <script  src="../javascript/createNew.js"></script>
 
         <div class="footerparent">
             <footer>
@@ -86,7 +84,7 @@
                         <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
                     </span> Yahya ÖZSOY</b>
             </footer>
-
+    
             <as-footer></as-footer>
         
             <script>
@@ -120,7 +118,7 @@
                     { path: '#wave10' },
                     { repeat: 999, duration: 3000, yoyo: true }
                 )
-        
+    
                 tween.start()
                 tween1.start()
                 tween2.start()

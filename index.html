@@ -6,31 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yahya OZSOY</title>
+    <!--loader-->       <script type=module src="./javascript/assetsLib.js"></script>
     <!--icon on tab-->  <link rel="icon" href="images/logo.png">
     <!--icons-->        <script src="https://kit.fontawesome.com/b6c5c6dbd1.js" crossorigin="anonymous"></script>
-    <!--main-->         <link rel="stylesheet" href="./styles/main.css">
-    <!-- animator-->    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.2/dist/kute.min.js"></script>
-    <!-- waves -->      <script src="./javascript/waveColor.js"></script>
-    <!--For Xmas-->    <script src="../javascript/snowStorm.js"></script>
+    <!--main css-->     <link rel="stylesheet" href="./styles/main.css">
+    <!--animator-->     <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.2/dist/kute.min.js"></script>
+    <!--waves -->       <script src="./javascript/waveColor.js"></script>
+    <!--For Xmas-->     <script src="./javascript/snowStorm.js"></script>
     <!--1.61.0v-->
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul class="topnav">
-                <li class="logo"><a href="../"></a></li>
-                <li><a href=""><b>ANASAYFA</b></a></li>
-                <li class="dropdown">
-                    <button class="dropbtn"><b>PROJELERİM</b></button>
-                    <div class="dropdown-content">
-                        <a href="./pages/projects#okul">OKUL</a>
-                        <a href="./pages/projects#oyun">OYUN</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <as-header></as-header>
     <section>
         <header class="home" id="#">
             Öğrenci, Oyun Geliştirici.
@@ -48,8 +35,11 @@
             <a href="https://twitter.com/YahyaOzsoy_" target="_blank" class="fa-brands fa-twitter socialmedias tooltip">
                 <span class="tooltiptext small">Twitter</span>
             </a>
-            <a href="https://www.youtube.com/yahyaoyundaofficial" target="_blank" class="fa-brands fa-youtube socialmedias tooltip">
+            <a href="https://www.youtube.com/@YAHYAOZSOYY" target="_blank" class="fa-brands fa-youtube socialmedias tooltip">
                 <span class="tooltiptext small">Youtube</span>
+            </a>
+            <a href="www.linkedin.com/in/yahya-ozsoy" target="_blank" class="fa-brands fa-linkedin-in socialmedias tooltip">
+                <span class="tooltiptext small">LinkedIn</span>
             </a>
             <a href="https://discord.com/users/347321474748776450" target="_blank" class="fa-brands fa-discord socialmedias tooltip">
                 <span class="tooltiptext small">Discord</span>
@@ -63,7 +53,7 @@
                 Merhaba!
             </b></header>
         <nav>
-            <br>Daha fazla bilgi yok.
+            <br>Daha fazla bilgi yok!  
         </nav>
         <ul class="weirdbutton">
             <a class="mybutton" target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Projelerim</a>
@@ -121,14 +111,8 @@
                     <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
                 </span> Yahya ÖZSOY</b>
         </footer>
-        <div class="sm-footer">
-            <a href="https://github.com/yahyaozsoy" target="_blank" class="fa-brands fa-github"></a>
-            <a href="https://www.instagram.com/yahyaozsoy34/" target="_blank" class="fa-brands fa-instagram"></a>
-            <a href="https://www.facebook.com/yahya.zsoy/" target="_blank" class="fa-brands fa-facebook-f"></a>
-            <a href="https://twitter.com/YahyaOzsoy_" target="_blank" class="fa-brands fa-twitter"></a>
-            <a href="https://www.youtube.com/yahyaoyundaofficial" target="_blank" class="fa-brands fa-youtube"></a>
-            <a href="https://discord.com/users/347321474748776450" target="_blank" class="fa-brands fa-discord"></a>
-        </div>
+
+        <as-footer></as-footer>
     
         <script>
             const tween = KUTE.fromTo(
