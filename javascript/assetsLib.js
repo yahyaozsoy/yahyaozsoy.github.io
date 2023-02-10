@@ -5,14 +5,15 @@ class A_Header extends HTMLElement{
                 <nav>
                     <ul class="topnav">
                         <li class="logo"><a href="../"></a></li>
-                        <li><a href=""><b>ANASAYFA</b></a></li>
+                        <li><img src="../images/siyah_kurdela_01.png" alt="kurdele" width="60rem" height="70rem"></li>
+                        <!--<li><a href=""><b>ANASAYFA</b></a></li>
                         <li class="dropdown">
                             <button class="dropbtn"><b>PROJELERİM</b></button>
                             <div class="dropdown-content">
-                                <a href="./pages/projects#okul">OKUL</a>
-                                <a href="./pages/projects#oyun">OYUN</a>
+                                <a href="../pages/projects#okul">OKUL</a>
+                                <a href="../pages/projects#oyun">OYUN</a>
                             </div>
-                        </li>
+                        </li>-->
                     </ul>
                 </nav>
             </header>
@@ -31,7 +32,7 @@ class A_Footer extends HTMLElement{
             <a href="https://www.facebook.com/yahya.zsoy/" target="_blank" class="fa-brands fa-facebook-f"></a>
             <a href="https://twitter.com/YahyaOzsoy_" target="_blank" class="fa-brands fa-twitter"></a>
             <a href="https://www.youtube.com/@YAHYAOZSOYY" target="_blank" class="fa-brands fa-youtube"></a>
-            <a href="https://www.linkedin.com/in/yahya-ozsoy" target="_blank" class="fa-brands fa-linkedin-in"></a>
+            <a href="www.linkedin.com/in/yahya-ozsoy" target="_blank" class="fa-brands fa-linkedin-in"></a>
             <a href="https://discord.com/users/347321474748776450" target="_blank" class="fa-brands fa-discord"></a>
         </div>
         `;
