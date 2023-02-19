@@ -519,6 +519,32 @@ footer {
     transform: scale(1.10);
 }
 
+#submit,
+.regular_btn {
+    font-size: 1.3rem;
+    padding: 0.2rem 0.8rem;
+    margin-top: 2rem;
+    color: var(--whitesmoke);
+    background-color: transparent;
+    border: 2px solid var(--red);
+    outline: none;
+    border-radius: 0.5rem;
+
+    transition: var(--normal-trans-eio);
+}
+
+.regular_btn {
+    margin: 0 0 0 1rem;
+    height: 3.5rem;
+}
+
+#submit:hover,
+.regular_btn:hover {
+    background-color: var(--red);
+    cursor: pointer;
+    transform: scale(1.10);
+}
+
 .result {
     display: flex;
     justify-content: center;

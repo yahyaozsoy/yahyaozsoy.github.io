@@ -19,19 +19,20 @@
       <as-header></as-header>
       
       <div id="contains">
-          <label for="nameOWhite" class="nameOWhite">White's Name</label>
+          <label for="nameOWhite" class="nameOWhite">Beyaz'ın İsmi</label>
           <input type="text" id="nameOWhite" name="nameOWhite">
-          <label for="nameOBlack" class="nameOBlack">Black's Name</label>
+          <label for="nameOBlack" class="nameOBlack">Siyah'ın İsmi</label>
           <input type="text" id="nameOBlack" name="nameOBlack">
-          <label for="urlOGame" class="urlOGame">Game's URL</label>
+          <label for="urlOGame" class="urlOGame">Oyunun Bağlantısı</label>
           <input type="urlOGame" id="urlOGame" name="urlOGame">
-          <button id="submit">Generate</button>
+          <button id="submit">Oluştur</button>
       </div>
       <div class="result">
           <textarea class="result_text" type="text" rows="5"></textarea>
           <button class="copy_btn"><i class="fas fa-clipboard"></i></button>
+          <button class="regular_btn"onclick="downloadHtml('NewGame.html');"><i class="fas fa-floppy-disk"></i></button>
       </div>
-      <script  src="../javascript/createNew.js"></script>
+      <script src="../javascript/createNew.js"></script>
 
         <div class="footerparent">
             <footer>

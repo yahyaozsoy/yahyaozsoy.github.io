@@ -7,30 +7,40 @@
         <title>Yahya ÖZSOY</title>
         <link rel="preconnect" href="https://fonts.gstatic.com"> 	
         <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-        <!--loader-->       <script type=module src="../javascript/assetsLib.js"></script>
         <!--icon on tab-->  <link rel="icon" href="../images/logo.png">
-        <!--icons-->        <script src="https://kit.fontawesome.com/b6c5c6dbd1.js" crossorigin="anonymous"></script>
-        <!--main-->         <link rel="stylesheet" href="../styles/main.css">
-        <!-- animator-->    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.2/dist/kute.min.js"></script>
-        <!-- waves -->      <script src="../javascript/waveColor.js"></script>
+        <!--icons-->     <script src="https://kit.fontawesome.com/b6c5c6dbd1.js" crossorigin="anonymous"></script>
+        <!--main-->      <link rel="stylesheet" href="../styles/main.css">
+        <!-- animator--> <script src="https://cdn.jsdelivr.net/npm/kute.js@2.2.2/dist/kute.min.js"></script>
+        <!-- waves -->   <script src="../javascript/waveColor.js"></script>
         <script data-ad-client="ca-pub-9325217213056739" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </head>
     <body>
-        <as-header></as-header>
+        <header>
+            <nav>
+                <ul class="topnav">
+                    <li class="logo"><a href="../"></a></li>
+                    <li><a href="../"><b>ANASAYFA</b></a></li>
+                    <li class="dropdown">
+                        <button class="dropbtn"><b>PROJELERİM</b></button>
+                        <div class="dropdown-content">
+                          <a href="./projects#okul">OKUL</a>
+                          <a href="./projects#oyun">OYUN</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
 
         <!--For Xmas
         <script src="../javascript/snowStorm.js"></script>-->
+
         <section>
 
         </section>
         <section class="features">
-            <div style="width: 100%;">
-                <div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;">
-                    <iframe frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="../downloadable/TÜBİTAK_ PORTAKAL KABUKLARINI ATMA!.pdf" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> 
-                </div> 
-            </div>
-            <figure style="padding-bottom: 25rem;">
-                <a href="../downloadable/TÜBİTAK_ PORTAKAL KABUKLARINI ATMA!.pdf" target="_blank" class="mybutton">Video Sayfası</a>
+            <div style="width: 100%;"><div style="position: relative; padding-bottom: 56.25%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1200" height="675" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://docs.google.com/presentation/d/e/2PACX-1vSmo5Po657n8wcNPtKaXZ12KiRgxRqAyodybYI777Frut_L9ZKgJRuA23hthoMN169isQjlymDu91aQ/embed?start=false&loop=false&delayms=6000" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
+            <figure>
+                <a href="https://docs.google.com/presentation/d/1Vta1RZkSv4JcfFXCRgpyqggbIfQViNmgbkm3LBUBpb0/edit?usp=sharing" target="_blank" class="mybutton">Slayt Sayfası</a>
             </figure>
         </section>
 
@@ -85,8 +95,14 @@
                         <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
                     </span> Yahya ÖZSOY</b>
             </footer>
-    
-            <as-footer></as-footer>
+            <div class="sm-footer">
+                <a href="https://github.com/yahyaozsoy" target="_blank" class="fa-brands fa-github"></a>
+                <a href="https://www.instagram.com/yahyaozsoy34/" target="_blank" class="fa-brands fa-instagram"></a>
+                <a href="https://www.facebook.com/yahya.zsoy/" target="_blank" class="fa-brands fa-facebook-f"></a>
+                <a href="https://twitter.com/YahyaOzsoy_" target="_blank" class="fa-brands fa-twitter"></a>
+                <a href="https://www.youtube.com/yahyaoyundaofficial" target="_blank" class="fa-brands fa-youtube"></a>
+                <a href="https://discord.com/users/347321474748776450" target="_blank" class="fa-brands fa-discord"></a>
+            </div>
         
             <script>
                 const tween = KUTE.fromTo(
@@ -119,7 +135,7 @@
                     { path: '#wave10' },
                     { repeat: 999, duration: 3000, yoyo: true }
                 )
-    
+        
                 tween.start()
                 tween1.start()
                 tween2.start()
