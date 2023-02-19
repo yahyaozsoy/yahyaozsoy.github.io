@@ -231,7 +231,8 @@ function copy(){
     document.execCommand("copy");
 }
 
-function downloadHtml(filename) {
+function downloadHtml() {
+    filename = `${nameOWhite}${nameOBlack}.html`;
     html = result.value;
     var blob = new Blob([html], { type: 'text/html' });
     var link = document.createElement('a');
