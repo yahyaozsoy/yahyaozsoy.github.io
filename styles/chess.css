@@ -1,58 +1,20 @@
 /*@import url('https://fonts.googleapis.com/css?family=Roboto');*/
 :root{
     /*Fonts Options*/
-    /*--roboto-t:'Roboto Thin', Arial, sans-serif, helvetica;
-    --roboto-b:'Roboto Black', Arial Black, sans-serif, helvetica;
-    --roboto: 'Roboto', Arial, sans-serif, helvetica;
-    --footer-size: 20px;*/
-    
-    /*Color Options*/
-    /*--black-background: #222222;
-    --black: #191919;
-    --font-color: #0a0a0a;
-    --whitesmoke: rgb(225, 225, 225);
-    --red: #dd4a4a;
-    --red-hover: #ff6f6f;
-    --stockfish: #52B5F8;
-    --chess-bg: #ced1d4;*/
-    
-    /*Low Opacity*/
-    /*--alphazero: #ffffff00;
-    --black-a1: #0000001a;
-    --black-a08: #000000cc;*/
-
-    /* Transition Options */
-    /*--normal-trans-eio: 200ms ease-in-out;
-    --normal-trans-e: 200ms ease;
-
-    --padding-LandR: 0px 20px 5px 10px;
-    
-    --sidebar: #1a1a1a;
-    --sidebar-inside: #dadada;
-    --sidebar-color: #383839;
-    --sidebar-color-hover: #38383926;
-
-    --card-color: #262422;
-    --card-font-color: #dadada;
-    */
-
-
-    /*Xmas Update*/
-    /*Fonts Options*/
     --roboto-t:'Roboto Thin', Arial, sans-serif, helvetica;
     --roboto-b:'Roboto Black', Arial Black, sans-serif, helvetica;
     --roboto: 'Roboto', Arial, sans-serif, helvetica;
     --footer-size: 20px;
     
     /*Color Options*/
-    --black-background: whitesmoke;
-    --black: #191919;
-    --font-color: #FFD700;
+    --black-background: #222222;
+    --black: #EDAE49;
+    --font-color: #D1495B;
     --whitesmoke: rgb(225, 225, 225);
     --red: #dd4a4a;
-    --red-hover: #ff6f6f;
-    --stockfish: #33724c;
-    --chess-bg: #4c83c7;
+    --red-hover: #ff596f;
+    --stockfish: #00798C;
+    --chess-bg: #ced1d4;
     
     /*Low Opacity*/
     --alphazero: #ffffff00;
@@ -65,13 +27,50 @@
 
     --padding-LandR: 0px 20px 5px 10px;
     
+    --sidebar: #003D5B;
+    --sidebar-inside: #dadada;
+    --sidebar-color: #30638E;
+    --sidebar-color-hover: #30638E26;
+
+    --card-color: #262422;
+    --card-font-color: #dadada;
+
+
+    /*Xmas Update*/
+    /*Fonts Options*/
+    /* --roboto-t:'Roboto Thin', Arial, sans-serif, helvetica;
+    --roboto-b:'Roboto Black', Arial Black, sans-serif, helvetica;
+    --roboto: 'Roboto', Arial, sans-serif, helvetica;
+    --footer-size: 20px; */
+    
+    /*Color Options*/
+    /* --black-background: whitesmoke;
+    --black: #191919;
+    --font-color: #FFD700;
+    --whitesmoke: rgb(225, 225, 225);
+    --red: #dd4a4a;
+    --red-hover: #ff6f6f;
+    --stockfish: #33724c;
+    --chess-bg: #4c83c7; */
+    
+    /*Low Opacity*/
+    /* --alphazero: #ffffff00;
+    --black-a1: #0000001a;
+    --black-a08: #000000cc; */
+
+    /* Transition Options */
+    /* --normal-trans-eio: 200ms ease-in-out;
+    --normal-trans-e: 200ms ease;
+
+    --padding-LandR: 0px 20px 5px 10px;
+    
     --sidebar: #A72608;
     --sidebar-inside: #d7263d;
     --sidebar-color: #f8f8f8;
     --sidebar-color-hover: #f8f8f826;
 
     --card-color: rgb(100, 70, 60);
-    --card-font-color: #187e3f;
+    --card-font-color: #187e3f; */
 }
 
 html {
@@ -110,7 +109,7 @@ a {
 }
 
 a:hover {
-    color: var(--stockfish);
+    color: var(--red-hover);
 }
 
 header .ncal a {
@@ -259,10 +258,10 @@ header .ncal a {
 }
 
 .sidenav .champName{
-    color: var(--whitesmoke);
+    color: var(--sidebar-color);
 }
 .sidenav .resultsMenu{
-    color: var(--whitesmoke);
+    color: var(--sidebar-color);
 }
 
 li{
@@ -677,45 +676,38 @@ footer {
 
 .collapsible {
     z-index: 1;
+    font-weight: bold;
     background-position: 0% 0%;
     position: relative;
-    background-color: var(--alphazero);
-    color: var(--black);
-    cursor: pointer;
-    padding: 20px;
-    width: 100%;
     border: none;
+    background-color: var(--alphazero);
+    color: var(--sidebar-color);
+    padding: 6px;
+    cursor: pointer;
+    width: 100%;
     text-align: left;
     outline: none;
-    font-size: var(--footer-size);
+    font-size: medium;
     background-color: var(--alphazero);
-    position: relative;
-    border: 0;
-    border-top: 20px solid var(--whitesmoke);
-    border-radius: 100px;
-	display: flex;
-    flex-direction: row;
-    position: relative;
-    top: -90px;
 }
 
 .collapsible:after {
-    content: 'SEEN ONES \002B';
-    color: white;
-    font-weight: bold;
+    content: '\2617';
+    color: var(--sidebar-color);
     float: right;
     margin-left: 5px;
 }
 
 .collapsible_active:after {
-    content: "SEEN ONES \2212";
+    content: "\2616";
 }
 
 .collapsible_content {
     position: relative;
-    padding: 0 18px;
-    max-height: 0;
+    max-height: 0rem;
     overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     transition: var(--normal-trans-eio);
     background-color: var(--alphazero);
 }

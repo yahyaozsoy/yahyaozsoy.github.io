@@ -10,7 +10,7 @@
         <!--icons-->       <script src="https://kit.fontawesome.com/b6c5c6dbd1.js" crossorigin="anonymous"></script>
         <!--main-->        <link rel="stylesheet" href="../styles/chess.css">
         <!--Chess.js-->    <script src="../javascript/Chess.js"></script>
-        <!--For Xmas-->    <script src="../javascript/snowStorm.js"></script>
+        <!-- For Xmas-->   <script src="../javascript/snowStorm.js"></script>
         <script data-ad-client="ca-pub-9325217213056739" async
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     </head>
@@ -20,9 +20,10 @@
             <nav>
                 <ul class="topnav">
                     <li class="ncal"><a href="./chess#active-matches"></a></li>
-                    <li><a style="position: relative; margin-left: -5vw;" href="./old/games/dailypuzzle">Günün Bulmacası <i class="fa-solid fa-graduation-cap"></i></a></li>
-                    <li><a style="position: relative; margin-left: -3vw;" href="./rules.pdf" target="_blank">Kurallar <i class="fa-solid fa-scale-balanced"></i></a></li>
-                    <li><a style="position: relative; margin-left: -3vw;" href="./info">Duyurular <i class="fa-solid fa-bullhorn"></i></a></li>
+                    <li><a style="position: relative; margin-left: -5vw; font-size: 2rem;" href="./games/dailypuzzle">Günün Bulmacası <i class="fa-solid fa-graduation-cap"></i></a></li>
+                    <li><a style="position: relative; margin-left: -5vw; font-size: 2rem;" href="../404" target="_blank">Başvuru <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+                    <li><a style="position: relative; margin-left: -3vw; font-size: 2rem;" href="./rules.pdf" target="_blank">Kurallar <i class="fa-solid fa-scale-balanced"></i></a></li>
+                    <li><a style="position: relative; margin-left: -3vw; font-size: 2rem;" href="./info">Duyurular <i class="fa-solid fa-bullhorn"></i></a></li>
                 </ul>
             </nav>
         </header>
@@ -33,149 +34,159 @@
                 <button onclick="showContent()" class="menuselector active"><i class="fa-solid fa-chess"></i> Oyunlar</i></button>
                 <button onclick="showContent()" class="menuselector"><i class="fa-solid fa-user"></i> Sonuçlar</button>
             </div>
-            <div class="flex-col activeflex" id="chessScrollbar">
-                <as-gamesnav></as-gamesnav>
+            <div class="flex-col activeflex" id="noscrollbar">
+                <button class="collapsible" style="padding-top: 1em; padding-bottom: 1em;">II. Genç Dimağ Müsabakaları </button>
+                <div class="collapsible_content" id="chessScrollbar">
+                    <as-gamesnav2023></as-gamesnav2023>
+                </div>
+                <button class="collapsible" style="padding-top: 1em; padding-bottom: 1em;">I. Genç Dimağ Müsabakaları </button>
+                <div class="collapsible_content" id="chessScrollbar">
+                    <as-gamesnav2022></as-gamesnav2022>
+                </div>
             </div>
 
-            <div class="flex-col" id="chessScrollbar">
-                <div class="namepoint" style="padding-bottom: 3%;">
-                    <li class="labels">Ad-Soyad</li><li>Puan</li>
+            <div class="flex-col" id="noscrollbar">
+                <button class="collapsible" style="padding-top: 1em; padding-bottom: 1em;">I. Genç Dimağ Müsabakaları </button>
+                <div class="collapsible_content" id="noscrollbar" style="padding: 0;">
+                    <div class="namepoint" style="padding-bottom: 3%;">
+                        <li class="labels">Ad-Soyad</li><li style="position: relative; right: 8rem;">Puan</li>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+    
+                    <!-- Example resultsMenu
+                    <div class="labels" style="font-size: 2vh;">
+                        <b>Efe ÖZBİLİKER</b>
+                        (8000) 🇹🇷
+                        <div class="resultsMenu">1</div>
+                    </div> -->
                 </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-                <div class="labels" style="font-size: 2vh;">
-                    <b class="champName"></b>
-                    <div class="resultsMenu"></div>
-                </div>
-
-                <!-- Example resultsMenu
-                <div class="labels" style="font-size: 2vh;">
-                    <b>Efe ÖZBİLİKER</b>
-                    (8000) 🇹🇷
-                    <div class="resultsMenu">1</div>
-                </div> -->
             </div>
 
         </div>
@@ -189,551 +200,556 @@
                 </header>
             </section>
         </div>
-        <section>
-            <header class="header" id="5">
-                <h1 class="roundName">6. Tur 26-28 Aralık</h1>
-            </header>
-        </section>
-        <section class="features grid">
 
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/arifkadir.gif" alt="AvK" style="width: 100%; height: 100%;">
-                    <p class="date">27/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/arifkadir'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/erenemir.gif" alt="EvE" style="width: 100%; height: 100%;">
-                    <p class="date">27/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/erenemir'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/osamaismet.gif" alt="OvI" style="width: 100%; height: 100%;">
-                    <p class="date">27/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/osamaihsan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/erginermal.gif" alt="EvE" style="width: 100%; height: 100%;">
-                    <p class="date">26/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/erginermal'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/burakoguzhan.gif" alt="BvO" style="width: 100%; height: 100%;">
-                    <p class="date">26/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/burakoguzhan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/rojhatihsan.gif" alt="RvI" style="width: 100%; height: 100%;">
-                    <p class="date">26/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/rojhatihsan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-        </section>
-
-        <section>
-            <header class="header" id="5">
-                <h1 class="roundName">5. Tur 19-21 Aralık</h1>
-            </header>
-        </section>
-        <section class="features grid">
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/zelisaneren.gif" alt="ZvE" style="width: 100%; height: 100%;">
-                    <p class="date">22/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/zelisaneren'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/erginosama.gif" alt="EvO" style="width: 100%; height: 100%;">
-                    <p class="date">21/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/erginosama'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/furkanmete.gif" alt="FvM" style="width: 100%; height: 100%;">
-                    <p class="date">20/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/furkanmete'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/emirmuhammed.gif" alt="EvM" style="width: 100%; height: 100%;">
-                    <p class="date">20/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/emirmuhammed'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/oguzhanosman.gif" alt="OvO" style="width: 100%; height: 100%;">
-                    <p class="date">20/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/oguzhanosman'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/mertihsan.gif" alt="MvI" style="width: 100%; height: 100%;">
-                    <p class="date">19/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/mertihsan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/kadirberat.gif" alt="KvB" style="width: 100%; height: 100%;">
-                    <p class="date">19/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/kadirberat'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/rojhatatahan.gif" alt="RvA" style="width: 100%; height: 100%;">
-                    <p class="date">19/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/rojhatatahan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/erenismet.gif" alt="EvI" style="width: 100%; height: 100%;">
-                    <p class="date">19/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/erenismet'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-        </section>
-
-        <section>
-            <header class="header" id="4">
-                <h1 class="roundName">4. Tur 13-15 Aralık</h1>
-            </header>
-        </section>
-        <section class="features grid">
+        <button class="collapsible" style="width: calc(100vw/1.25); font-size: xx-large;">I. Genç Dimağ Müsabakaları </button>
+        <div class="collapsible_content">
+            <section>
+                <header class="header" id="5">
+                    <h1 class="roundName">6. Tur 26-28 Aralık</h1>
+                </header>
+            </section>
+            <section class="features grid">
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/arifkadir.gif" alt="AvK" style="width: 100%; height: 100%;">
+                        <p class="date">27/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/arifkadir'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/erenemir.gif" alt="EvE" style="width: 100%; height: 100%;">
+                        <p class="date">27/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/erenemir'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/osamaismet.gif" alt="OvI" style="width: 100%; height: 100%;">
+                        <p class="date">27/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/osamaihsan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/erginermal.gif" alt="EvE" style="width: 100%; height: 100%;">
+                        <p class="date">26/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/erginermal'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/burakoguzhan.gif" alt="BvO" style="width: 100%; height: 100%;">
+                        <p class="date">26/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/burakoguzhan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/rojhatihsan.gif" alt="RvI" style="width: 100%; height: 100%;">
+                        <p class="date">26/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/rojhatihsan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+            </section>
+    
+            <section>
+                <header class="header" id="5">
+                    <h1 class="roundName">5. Tur 19-21 Aralık</h1>
+                </header>
+            </section>
+            <section class="features grid">
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/zelisaneren.gif" alt="ZvE" style="width: 100%; height: 100%;">
+                        <p class="date">22/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/zelisaneren'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/erginosama.gif" alt="EvO" style="width: 100%; height: 100%;">
+                        <p class="date">21/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/erginosama'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/furkanmete.gif" alt="FvM" style="width: 100%; height: 100%;">
+                        <p class="date">20/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/furkanmete'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/emirmuhammed.gif" alt="EvM" style="width: 100%; height: 100%;">
+                        <p class="date">20/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/emirmuhammed'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/oguzhanosman.gif" alt="OvO" style="width: 100%; height: 100%;">
+                        <p class="date">20/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/oguzhanosman'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/mertihsan.gif" alt="MvI" style="width: 100%; height: 100%;">
+                        <p class="date">19/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/mertihsan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/kadirberat.gif" alt="KvB" style="width: 100%; height: 100%;">
+                        <p class="date">19/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/kadirberat'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/rojhatatahan.gif" alt="RvA" style="width: 100%; height: 100%;">
+                        <p class="date">19/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/rojhatatahan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/erenismet.gif" alt="EvI" style="width: 100%; height: 100%;">
+                        <p class="date">19/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/erenismet'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+            </section>
+    
+            <section>
+                <header class="header" id="4">
+                    <h1 class="roundName">4. Tur 13-15 Aralık</h1>
+                </header>
+            </section>
+            <section class="features grid">
+                
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/atahanihsan.gif" alt="AvI" style="width: 100%; height: 100%;">
+                        <p class="date">15/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/atahanihsan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+                
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/yusufismet.gif" alt="YvI" style="width: 100%; height: 100%;">
+                        <p class="date">15/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/yusufismet'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/mertomer.gif" alt="MvO" style="width: 100%; height: 100%;">
+                        <p class="date">15/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/mertomer'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+                
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/beratermal.gif" alt="BvE" style="width: 100%; height: 100%;">
+                        <p class="date">15/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/berataslan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+                
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/erenayhan.gif" alt="EvA" style="width: 100%; height: 100%;">
+                        <p class="date">15/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/erenayhan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+                
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/erginaslan.gif" alt="EvA" style="width: 100%; height: 100%;">
+                        <p class="date">14/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/erginaslan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+                
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/erenbesmele.gif" alt="EvB" style="width: 100%; height: 100%;">
+                        <p class="date">14/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/erenbesmele'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/kadirosama.gif" alt="KvO" style="width: 100%; height: 100%;">
+                        <p class="date">13/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/kadirosama'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/enesfurkan.gif" alt="EvF" style="width: 100%; height: 100%;">
+                        <p class="date">13/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/enesfurkan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/oguzhanmert.gif" alt="OvM" style="width: 100%; height: 100%;">
+                        <p class="date">13/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/oguzhanmert'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/uguremin.gif" alt="UvE" style="width: 100%; height: 100%;">
+                        <p class="date">13/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/muhammedmehmet'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/arifrojhat.gif" alt="AvR" style="width: 100%; height: 100%;">
+                        <p class="date">13/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/arifrojhat'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+            </section>
+    
+            <section>
+                <header class="header" id="3">
+                    <h1 class="roundName">3. Tur 5-7 Aralık</h1>
+                </header>
+            </section>
+            <section class="features grid">
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/mertrojhat.gif" alt="MvR" style="width: 100%; height: 100%;">
+                        <p class="date">07/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/mertrojhat'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/burakkerem.gif" alt="BvK" style="width: 100%; height: 100%;">
+                        <p class="date">07/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/burakkerem'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/mertemir.gif" alt="MvE" style="width: 100%; height: 100%;">
+                        <p class="date">07/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/mertemir'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/besmelemuhammed.gif" alt="BvM" style="width: 100%; height: 100%;">
+                        <p class="date">07/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/besmelemuhammed'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/ismetatahan.gif" alt="İvA" style="width: 100%; height: 100%;">
+                        <p class="date">07/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/ismetatahan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/yusufihsan.gif" alt="Yvİ" style="width: 100%; height: 100%;">
+                        <p class="date">07/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/yusufihsan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/berataslan.gif" alt="OvZ" style="width: 100%; height: 100%;">
+                        <p class="date">06/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/berataslan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/arifergin.gif" alt="AvE" style="width: 100%; height: 100%;">
+                        <p class="date">06/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/arifergin'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/osmanzelisan.gif" alt="OvZ" style="width: 100%; height: 100%;">
+                        <p class="date">06/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/osmanzelisan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+                
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/enesermal.gif" alt="EvE" style="width: 100%; height: 100%;">
+                        <p class="date">06/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/enesermal'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+                
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/erenmuhammet.gif" alt="EvM" style="width: 100%; height: 100%;">
+                        <p class="date">06/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/erenmuhammet'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/omerayhan.gif" alt="OvA" style="width: 100%; height: 100%;">
+                        <p class="date">05/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/omerayhan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/mehmetmete.gif" alt="MvM" style="width: 100%; height: 100%;">
+                        <p class="date">05/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/mehmetmete'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>     
+                
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/erenkadir.gif" alt="EvK" style="width: 100%; height: 100%;">
+                        <p class="date">05/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/erenkadir'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/agahosama.gif" alt="AvO" style="width: 100%; height: 100%;">
+                        <p class="date">05/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/agahosama'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+                
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/furkanoguzhan.gif" alt="FvO" style="width: 100%; height: 100%;">
+                        <p class="date">05/12/2022</p>
+                        <p><button onclick="window.location.href='./games/old/furkanoguz'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+            </section>
+    
+            <section>
+                <header class="header" id="2">
+                    <h1 class="roundName">2. Tur 28-31 Kasım</h1>
+                </header>
+            </section>
             
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/atahanihsan.gif" alt="AvI" style="width: 100%; height: 100%;">
-                    <p class="date">15/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/atahanihsan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
+            <section class="features grid">
+                
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/osmanomer.gif" alt="OvÖ" style="width: 100%; height: 100%;">
+                        <p class="date">30/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/osmanomer'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/agahatahan.gif" alt="AvA" style="width: 100%; height: 100%;">
+                        <p class="date">30/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/agahatahan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+                
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/mertmete.gif" alt="MvM" style="width: 100%; height: 100%;">
+                        <p class="date">30/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/mertmete'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+                
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/ihsaneren.gif" alt="İvE" style="width: 100%; height: 100%;">
+                        <p class="date">30/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/ihsaneren'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+                
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/aslanrojhat.gif" alt="AvR" style="width: 100%; height: 100%;">
+                        <p class="date">30/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/aslanrojhat'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/arifenes.gif" alt="AvE" style="width: 100%; height: 100%;">
+                        <p class="date">29/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/arifenes'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/oguzhanbeyzanur.gif" alt="OvB" style="width: 100%; height: 100%;">
+                        <p class="date">29/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/oguzhanbeyzanur'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>     
+                
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/yusufkadir.gif" alt="YvK" style="width: 100%; height: 100%;">
+                        <p class="date">29/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/yusufkadir'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/ayhanzelisan.gif" alt="AvZ" style="width: 100%; height: 100%;">
+                        <p class="date">28/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/ayhanzelisan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+                
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/muhammedcanosama.gif" alt="MvO" style="width: 100%; height: 100%;">
+                        <p class="date">28/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/muhammedcanosama'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+            </section>
+    
+            <section>
+                <header class="header" id="1">
+                    <h1 class="roundName">1. Tur 21-23 Kasım</h1>
+                </header>
+            </section>
             
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/yusufismet.gif" alt="YvI" style="width: 100%; height: 100%;">
-                    <p class="date">15/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/yusufismet'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/mertomer.gif" alt="MvO" style="width: 100%; height: 100%;">
-                    <p class="date">15/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/mertomer'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-            
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/beratermal.gif" alt="BvE" style="width: 100%; height: 100%;">
-                    <p class="date">15/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/berataslan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-            
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/erenayhan.gif" alt="EvA" style="width: 100%; height: 100%;">
-                    <p class="date">15/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/erenayhan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-            
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/erginaslan.gif" alt="EvA" style="width: 100%; height: 100%;">
-                    <p class="date">14/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/erginaslan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-            
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/erenbesmele.gif" alt="EvB" style="width: 100%; height: 100%;">
-                    <p class="date">14/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/erenbesmele'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/kadirosama.gif" alt="KvO" style="width: 100%; height: 100%;">
-                    <p class="date">13/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/kadirosama'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/enesfurkan.gif" alt="EvF" style="width: 100%; height: 100%;">
-                    <p class="date">13/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/enesfurkan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/oguzhanmert.gif" alt="OvM" style="width: 100%; height: 100%;">
-                    <p class="date">13/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/oguzhanmert'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/uguremin.gif" alt="UvE" style="width: 100%; height: 100%;">
-                    <p class="date">13/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/muhammedmehmet'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/arifrojhat.gif" alt="AvR" style="width: 100%; height: 100%;">
-                    <p class="date">13/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/arifrojhat'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-        </section>
-
-        <section>
-            <header class="header" id="3">
-                <h1 class="roundName">3. Tur 5-7 Aralık</h1>
-            </header>
-        </section>
-        <section class="features grid">
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/mertrojhat.gif" alt="MvR" style="width: 100%; height: 100%;">
-                    <p class="date">07/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/mertrojhat'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/burakkerem.gif" alt="BvK" style="width: 100%; height: 100%;">
-                    <p class="date">07/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/burakkerem'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/mertemir.gif" alt="MvE" style="width: 100%; height: 100%;">
-                    <p class="date">07/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/mertemir'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/besmelemuhammed.gif" alt="BvM" style="width: 100%; height: 100%;">
-                    <p class="date">07/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/besmelemuhammed'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/ismetatahan.gif" alt="İvA" style="width: 100%; height: 100%;">
-                    <p class="date">07/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/ismetatahan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/yusufihsan.gif" alt="Yvİ" style="width: 100%; height: 100%;">
-                    <p class="date">07/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/yusufihsan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/berataslan.gif" alt="OvZ" style="width: 100%; height: 100%;">
-                    <p class="date">06/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/berataslan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/arifergin.gif" alt="AvE" style="width: 100%; height: 100%;">
-                    <p class="date">06/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/arifergin'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/osmanzelisan.gif" alt="OvZ" style="width: 100%; height: 100%;">
-                    <p class="date">06/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/osmanzelisan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-            
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/enesermal.gif" alt="EvE" style="width: 100%; height: 100%;">
-                    <p class="date">06/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/enesermal'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-            
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/erenmuhammet.gif" alt="EvM" style="width: 100%; height: 100%;">
-                    <p class="date">06/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/erenmuhammet'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/omerayhan.gif" alt="OvA" style="width: 100%; height: 100%;">
-                    <p class="date">05/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/omerayhan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/mehmetmete.gif" alt="MvM" style="width: 100%; height: 100%;">
-                    <p class="date">05/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/mehmetmete'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>     
-            
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/erenkadir.gif" alt="EvK" style="width: 100%; height: 100%;">
-                    <p class="date">05/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/erenkadir'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/agahosama.gif" alt="AvO" style="width: 100%; height: 100%;">
-                    <p class="date">05/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/agahosama'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-            
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/furkanoguzhan.gif" alt="FvO" style="width: 100%; height: 100%;">
-                    <p class="date">05/12/2022</p>
-                    <p><button onclick="window.location.href='./old/games/furkanoguz'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-        </section>
-
-        <section>
-            <header class="header" id="2">
-                <h1 class="roundName">2. Tur 28-31 Kasım</h1>
-            </header>
-        </section>
+            <section class="features grid">
+                <!-- <figure>
+                    Example Match
+                    <div class="card">
+                        <img src="../images/gifs/thumbnail_exapmle.gif" alt="BOŞ" style="width: 100%; height: 100%;">
+                        <p><button onclick="window.location.href='./games/old/YahyaVEfe'">MAÇI İNCELE</button></p>
+                    </div> 
+                </figure> -->
+    
+                <figure >
+                    <div class="card">
+                        <img src="../images/chess/gifs/RojhatOsman.gif" alt="RvO" style="width: 100%; height: 100%;">
+                        <p class="date">21/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/rojhatosman'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/Osamaİhsan.gif" alt="Ovİ" style="width: 100%; height: 100%;">
+                        <p class="date">21/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/osamaihsan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/MehmetYusuf.gif" alt="MvY" style="width: 100%; height: 100%;">
+                        <p class="date">22/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/mehmetyusuf'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/MeteAyhan.gif" alt="MvA" style="width: 100%; height: 100%;">
+                        <p class="date">22/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/meteayhan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/AgahCivan.gif" alt="AvC" style="width: 100%; height: 100%;">
+                        <p class="date">22/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/agahcivan'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/aslanomer.gif" alt="AvO" style="width: 100%; height: 100%;">
+                        <p class="date">22/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/aslanomer'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+                <!-- <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/erginbesmele.gif" alt="EvB" style="width: 100%; height: 100%;">
+                        <p class="date">23/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/erginbesmele'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure> -->
+                <figure>
+                    <div class="card">
+                        <img src="../images/chess/gifs/kadirkerem.gif" alt="KvK" style="width: 100%; height: 100%;">
+                        <p class="date">23/11/2022</p>
+                        <p><button onclick="window.location.href='./games/old/kadirkerem'">MAÇI İNCELE</button></p>
+                    </div>
+                </figure>
+    
+            </section>
+        </div>
         
-        <section class="features grid">
-            
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/osmanomer.gif" alt="OvÖ" style="width: 100%; height: 100%;">
-                    <p class="date">30/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/osmanomer'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/agahatahan.gif" alt="AvA" style="width: 100%; height: 100%;">
-                    <p class="date">30/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/agahatahan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-            
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/mertmete.gif" alt="MvM" style="width: 100%; height: 100%;">
-                    <p class="date">30/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/mertmete'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-            
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/ihsaneren.gif" alt="İvE" style="width: 100%; height: 100%;">
-                    <p class="date">30/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/ihsaneren'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-            
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/aslanrojhat.gif" alt="AvR" style="width: 100%; height: 100%;">
-                    <p class="date">30/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/aslanrojhat'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/arifenes.gif" alt="AvE" style="width: 100%; height: 100%;">
-                    <p class="date">29/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/arifenes'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/oguzhanbeyzanur.gif" alt="OvB" style="width: 100%; height: 100%;">
-                    <p class="date">29/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/oguzhanbeyzanur'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>     
-            
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/yusufkadir.gif" alt="YvK" style="width: 100%; height: 100%;">
-                    <p class="date">29/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/yusufkadir'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/ayhanzelisan.gif" alt="AvZ" style="width: 100%; height: 100%;">
-                    <p class="date">28/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/ayhanzelisan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-            
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/muhammedcanosama.gif" alt="MvO" style="width: 100%; height: 100%;">
-                    <p class="date">28/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/muhammedcanosama'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-        </section>
-
-        <section>
-            <header class="header" id="1">
-                <h1 class="roundName">1. Tur 21-23 Kasım</h1>
-            </header>
-        </section>
-        
-        <section class="features grid">
-            <!-- <figure>
-                Example Match
-                <div class="card">
-                    <img src="../images/gifs/thumbnail_exapmle.gif" alt="BOŞ" style="width: 100%; height: 100%;">
-                    <p><button onclick="window.location.href='./old/games/YahyaVEfe'">MAÇI İNCELE</button></p>
-                </div> 
-            </figure> -->
-
-            <figure >
-                <div class="card">
-                    <img src="../images/chess/gifs/RojhatOsman.gif" alt="RvO" style="width: 100%; height: 100%;">
-                    <p class="date">21/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/rojhatosman'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/Osamaİhsan.gif" alt="Ovİ" style="width: 100%; height: 100%;">
-                    <p class="date">21/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/osamaihsan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/MehmetYusuf.gif" alt="MvY" style="width: 100%; height: 100%;">
-                    <p class="date">22/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/mehmetyusuf'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/MeteAyhan.gif" alt="MvA" style="width: 100%; height: 100%;">
-                    <p class="date">22/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/meteayhan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/AgahCivan.gif" alt="AvC" style="width: 100%; height: 100%;">
-                    <p class="date">22/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/agahcivan'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/aslanomer.gif" alt="AvO" style="width: 100%; height: 100%;">
-                    <p class="date">22/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/aslanomer'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-            <!-- <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/erginbesmele.gif" alt="EvB" style="width: 100%; height: 100%;">
-                    <p class="date">23/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/erginbesmele'">MAÇI İNCELE</button></p>
-                </div>
-            </figure> -->
-            <figure>
-                <div class="card">
-                    <img src="../images/chess/gifs/kadirkerem.gif" alt="KvK" style="width: 100%; height: 100%;">
-                    <p class="date">23/11/2022</p>
-                    <p><button onclick="window.location.href='./old/games/kadirkerem'">MAÇI İNCELE</button></p>
-                </div>
-            </figure>
-
-        </section>
 
         <div class="footerparent">
             <footer>
@@ -749,6 +765,7 @@
             </footer>
         </div>
 
+        <b style="font-size: 3px; position: relative; left: 50rem;">☭ 卐</b>
         <script>
             var header = document.getElementById("MenuButtons");
 
@@ -757,6 +774,7 @@
             var current = document.getElementsByClassName("active");
             var currentFlex = document.getElementsByClassName("flex-col");
             
+
             for (var i = 0; i < btns.length; i++) {
                 btns[i].addEventListener("click", function () {
 

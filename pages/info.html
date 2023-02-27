@@ -27,158 +27,168 @@
         </nav>
     </header>
 
-    <!-- Side navigation -->
-    <div class="sidenav">
-        <div class="flex-row" id="MenuButtons">
-            <button onclick="showContent()" class="menuselector active"><i class="fa-solid fa-chess"></i> Oyunlar</i></button>
-            <button onclick="showContent()" class="menuselector"><i class="fa-solid fa-user"></i> Sonuçlar</button>
-        </div>
-        <div class="flex-col activeflex" id="chessScrollbar">
-            <as-gamesnav></as-gamesnav>
-        </div>
-
-        <div class="flex-col" id="chessScrollbar">
-            <div class="namepoint" style="padding-bottom: 3%;">
-                <li class="labels">Ad-Soyad</li><li>Puan</li>
+        <!-- Side navigation -->
+        <div class="sidenav">
+            <div class="flex-row" id="MenuButtons">
+                <button onclick="showContent()" class="menuselector active"><i class="fa-solid fa-chess"></i> Oyunlar</i></button>
+                <button onclick="showContent()" class="menuselector"><i class="fa-solid fa-user"></i> Sonuçlar</button>
             </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
-            </div>
-            <div class="labels" style="font-size: 2vh;">
-                <b class="champName"></b>
-                <div class="resultsMenu"></div>
+            <div class="flex-col activeflex" id="noscrollbar">
+                <button class="collapsible" style="padding-top: 1em; padding-bottom: 1em;">II. Genç Dimağ Müsabakaları </button>
+                <div class="collapsible_content" id="chessScrollbar">
+                    <as-gamesnav2023></as-gamesnav2023>
+                </div>
+                <button class="collapsible" style="padding-top: 1em; padding-bottom: 1em;">I. Genç Dimağ Müsabakaları </button>
+                <div class="collapsible_content" id="chessScrollbar">
+                    <as-gamesnav2022></as-gamesnav2022>
+                </div>
             </div>
 
-            <!-- Example resultsMenu
-            <div class="labels" style="font-size: 2vh;">
-                <b>Efe ÖZBİLİKER</b>
-                (8000) 🇹🇷
-                <div class="resultsMenu">1</div>
-            </div> -->
-        </div>
+            <div class="flex-col" id="noscrollbar">
+                <button class="collapsible" style="padding-top: 1em; padding-bottom: 1em;">I. Genç Dimağ Müsabakaları </button>
+                <div class="collapsible_content" id="noscrollbar" style="padding: 0;">
+                    <div class="namepoint" style="padding-bottom: 3%;">
+                        <li class="labels">Ad-Soyad</li><li style="position: relative; right: 8rem;">Puan</li>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+                    <div class="labels" style="font-size: 2vh;">
+                        <b class="champName"></b>
+                        <div class="resultsMenu"></div>
+                    </div>
+    
+                    <!-- Example resultsMenu
+                    <div class="labels" style="font-size: 2vh;">
+                        <b>Efe ÖZBİLİKER</b>
+                        (8000) 🇹🇷
+                        <div class="resultsMenu">1</div>
+                    </div> -->
+                </div>
+            </div>
 
-    </div>
+        </div>
 
     <div class="main">
         <section>

@@ -30,19 +30,28 @@
                     </ul>
                 </nav>
             </header>
-            <!-- Side navigation -->
-            <div class="sidenav">
-                <div class="flex-row" id="MenuButtons">
-                    <button onclick="showContent()" class="menuselector active"><i class="fa-solid fa-chess"></i> Oyunlar</i></button>
-                    <button onclick="showContent()" class="menuselector"><i class="fa-solid fa-user"></i> Sonuçlar</button>
+        <!-- Side navigation -->
+        <div class="sidenav">
+            <div class="flex-row" id="MenuButtons">
+                <button onclick="showContent()" class="menuselector active"><i class="fa-solid fa-chess"></i> Oyunlar</i></button>
+                <button onclick="showContent()" class="menuselector"><i class="fa-solid fa-user"></i> Sonuçlar</button>
+            </div>
+            <div class="flex-col activeflex" id="noscrollbar">
+                <button class="collapsible" style="padding-top: 1em; padding-bottom: 1em;">II. Genç Dimağ Müsabakaları </button>
+                <div class="collapsible_content" id="chessScrollbar">
+                    <as-gamesnav2023></as-gamesnav2023>
                 </div>
-                <div class="flex-col activeflex" id="chessScrollbar">
-                    <as-gamesnav></as-gamesnav>
+                <button class="collapsible" style="padding-top: 1em; padding-bottom: 1em;">I. Genç Dimağ Müsabakaları </button>
+                <div class="collapsible_content" id="chessScrollbar">
+                    <as-gamesnav2022></as-gamesnav2022>
                 </div>
-        
-                <div class="flex-col" id="chessScrollbar">
+            </div>
+
+            <div class="flex-col" id="noscrollbar">
+                <button class="collapsible" style="padding-top: 1em; padding-bottom: 1em;">I. Genç Dimağ Müsabakaları </button>
+                <div class="collapsible_content" id="noscrollbar" style="padding: 0;">
                     <div class="namepoint" style="padding-bottom: 3%;">
-                        <li class="labels">Ad-Soyad</li><li>Puan</li>
+                        <li class="labels">Ad-Soyad</li><li style="position: relative; right: 8rem;">Puan</li>
                     </div>
                     <div class="labels" style="font-size: 2vh;">
                         <b class="champName"></b>
@@ -172,7 +181,7 @@
                         <b class="champName"></b>
                         <div class="resultsMenu"></div>
                     </div>
-        
+    
                     <!-- Example resultsMenu
                     <div class="labels" style="font-size: 2vh;">
                         <b>Efe ÖZBİLİKER</b>
@@ -180,22 +189,54 @@
                         <div class="resultsMenu">1</div>
                     </div> -->
                 </div>
-        
             </div>
+
+        </div>
             
             <section>
     
             </section>
-            <section class="features" style="left: -10rem;">
+            <section class="features" style="margin: auto; width: 80%;">
                 <div style="width: 100%; height: 100%;">
                     <div>
-                        <li class="labels" style="text-align: left; padding-left: 20vw; color: #0a0a0a;">efe</li>
-                        <iframe class="chessboard" width=900 height=600 src="https://lichess.org/study/embed/WOew1SIf/ggLh4aLN?theme=brown&bg=light" allowtransparency="true" frameborder=0></iframe>
-                        <li class="labels" style="text-align: left; padding-left: 20vw; color: #0a0a0a;">yahya</li>
+                        <li class="labels" style="text-align: left; padding-left: 20vw; color: #0a0a0a;">Denek 2</li>
+                        <iframe class="chessboard" width=900 height=600 src="https://lichess.org/study/embed/F7mEi8eF/43Bzw5kz?theme=brown&bg=light" allowtransparency="true" frameborder=0></iframe>
+                        <li class="labels" style="text-align: left; padding-left: 20vw; color: #0a0a0a;">Denek 1</li>
                     </div> 
                 </div>
             </section>
-        
+            
+            <script>
+                var header = document.getElementById("MenuButtons");
+    
+                var btns = header.getElementsByClassName("menuselector");
+    
+                var current = document.getElementsByClassName("active");
+                var currentFlex = document.getElementsByClassName("flex-col");
+                
+    
+                for (var i = 0; i < btns.length; i++) {
+                    btns[i].addEventListener("click", function () {
+    
+    
+                        current[0].className = current[0].className.replace(" active", "");
+                        this.className += " active";
+                    });
+                }
+    
+                function showContent(ev) {
+                    (ev||event).preventDefault();
+                    if(current[0].textContent == " Oyunlar"){
+                        currentFlex[0].className = currentFlex[0].className.replace(" activeflex", "")
+                        currentFlex[1].className += " activeflex";
+                    }else{
+                        currentFlex[1].className = currentFlex[1].className.replace(" activeflex", "")
+                        currentFlex[0].className += " activeflex";
+                    }
+    
+                }
+            </script>
+
             <div class="footerparent">
                 <footer>
                         <div class="sm-footer">
