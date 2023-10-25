@@ -5,13 +5,13 @@ class A_Header extends HTMLElement{
                 <nav>
                     <ul class="topnav">
                         <li class="logo"><a href="../"></a></li>
-                        <li><img src="../images/siyah_kurdela_01.png" alt="kurdele" width="60rem" height="70rem"></li>
+                        <li><img src="https://yahyaozsoy.github.io/images/siyah_kurdela_01.png" alt="kurdele" width="60rem" height="70rem"></li>
                         <!--<li><a href=""><b>ANASAYFA</b></a></li>
                         <li class="dropdown">
                             <button class="dropbtn"><b>PROJELERİM</b></button>
                             <div class="dropdown-content">
-                                <a href="../pages/projects#okul">OKUL</a>
-                                <a href="../pages/projects#oyun">OYUN</a>
+                                <a href="https://yahyaozsoy.github.io/pages/projects#okul">OKUL</a>
+                                <a href="https://yahyaozsoy.github.io/pages/projects#oyun">OYUN</a>
                             </div>
                         </li>-->
                     </ul>
