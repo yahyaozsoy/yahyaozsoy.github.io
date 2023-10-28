@@ -4,7 +4,7 @@ class A_Header extends HTMLElement{
             <header>
                 <nav>
                     <ul class="topnav">
-                        <li class="logo"><a href="../"></a></li>
+                        <li class="logo"><a href="https://yahyaozsoy.github.io/"></a></li>
                         <li><img src="https://yahyaozsoy.github.io/images/siyah_kurdela_01.png" alt="kurdele" width="60rem" height="70rem"></li>
                         <!--<li><a href=""><b>ANASAYFA</b></a></li>
                         <li class="dropdown">
