@@ -75,14 +75,26 @@ a:hover {
 
 header .logo a {
 	background-image: url("../images/logo.png");
-	background-size: 100px;
+	background-size: 6rem;
 	background-repeat: no-repeat;
 	display: inline-block;
-	height: 100px;
-	width: 111px;
+	height: 5rem;
+	width: 7rem;
 	text-indent: -999999px;
 	position: relative;
-    top: -15px;
+    top: -1rem;
+}
+
+header .ekim29 a {
+	background-image: url("../images/29ekim.png");
+	background-size: 12rem;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 5rem;
+	width: 12rem;
+	text-indent: -999999px;
+	position: relative;
+    top: -1rem;
 }
 
 li:first-child {
@@ -728,9 +740,15 @@ input[type="urlOGame"] {
     }
     
     header .logo a {
-        height: 60px;
-	    width: 80px;
-        background-size: 70px;
+        height: 4rem;
+	    width: 5rem;
+        background-size: 4rem;
+    }
+
+    header .ekim29 a {
+        height: 2rem;
+	    width: 7rem;
+        background-size: 7rem;
     }
 
     .card{

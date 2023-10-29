@@ -5,7 +5,8 @@ class A_Header extends HTMLElement{
                 <nav>
                     <ul class="topnav">
                         <li class="logo"><a href="https://yahyaozsoy.github.io/"></a></li>
-                        <li><img src="https://yahyaozsoy.github.io/images/siyah_kurdela_01.png" alt="kurdele" width="60rem" height="70rem"></li>
+                        <li class="ekim29"><a href="https://www.youtube.com/watch?v=7QmKhx3WIt8"></li>
+                        <!--<li><img src="https://yahyaozsoy.github.io/images/siyah_kurdela_01.png" alt="kurdele" width="60rem" height="70rem"></li>-->
                         <!--<li><a href=""><b>ANASAYFA</b></a></li>
                         <li class="dropdown">
                             <button class="dropbtn"><b>PROJELERİM</b></button>
