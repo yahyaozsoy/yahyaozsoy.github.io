@@ -43,6 +43,7 @@ body {
     width: 100%;
     margin: 0;
     min-height: 100vh;
+    padding-bottom: 170px;
     box-sizing: border-box;
 }
 
@@ -885,19 +886,16 @@ input[type="urlOGame"] {
 
 /* New calm, animated wave footer (replaces the old fixed 10-path morph) */
 .wavefooter {
-    position: relative;
-    bottom: auto;
-    width: auto;
     overflow: hidden;
-    padding: 56px 5% 20px;
+    padding: 86px 5% 20px;
 }
 
 .wavefooter .wave {
     position: absolute;
     left: 0;
-    bottom: 44px;
+    bottom: 40px;
     width: 200vw;
-    height: 46px;
+    height: 78px;
 }
 
 .wavefooter .wave-back {
@@ -908,7 +906,7 @@ input[type="urlOGame"] {
 
 .wavefooter .wave-front {
     fill: var(--stockfish);
-    bottom: 36px;
+    bottom: 28px;
     animation: wave-scroll 15s linear infinite reverse;
 }
 
@@ -942,11 +940,11 @@ input[type="urlOGame"] {
 
 @media screen and (max-width: 650px) {
     .wavefooter .wave {
-        bottom: 34px;
-        height: 34px;
+        bottom: 30px;
+        height: 58px;
     }
 
     .wavefooter .wave-front {
-        bottom: 26px;
+        bottom: 20px;
     }
 }
