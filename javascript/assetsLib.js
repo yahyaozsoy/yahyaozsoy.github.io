@@ -1,20 +1,13 @@
 class A_Header extends HTMLElement{
     connectedCallback() {
-        this.innerHTML = `    
+        this.innerHTML = `
             <header>
                 <nav>
                     <ul class="topnav">
                         <li class="logo"><a href="https://yahyaozsoy.github.io/"></a></li>
                         <li class="ekim29"><a href="https://www.youtube.com/watch?v=7QmKhx3WIt8"></li>
-                        <!--<li><img src="https://yahyaozsoy.github.io/images/siyah_kurdela_01.png" alt="kurdele" width="60rem" height="70rem"></li>-->
-                        <!--<li><a href=""><b>ANASAYFA</b></a></li>
-                        <li class="dropdown">
-                            <button class="dropbtn"><b>PROJELERİM</b></button>
-                            <div class="dropdown-content">
-                                <a href="https://yahyaozsoy.github.io/pages/projects#okul">OKUL</a>
-                                <a href="https://yahyaozsoy.github.io/pages/projects#oyun">OYUN</a>
-                            </div>
-                        </li>-->
+                        <li class="nav-link"><a href="https://yahyaozsoy.github.io/">Anasayfa</a></li>
+                        <li class="nav-link"><a href="https://yahyaozsoy.github.io/pages/projects">Projelerim</a></li>
                     </ul>
                 </nav>
             </header>
@@ -23,6 +16,50 @@ class A_Header extends HTMLElement{
 }
 
 customElements.define('as-header', A_Header);
+
+class A_WaveFooter extends HTMLElement{
+    connectedCallback() {
+        this.innerHTML = `
+        <div class="footerparent">
+            <footer class="wavefooter">
+                <svg class="wave wave-back" viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M0,32 C100,55 200,10 300,32 C400,54 500,12 600,32 L600,60 L0,60 Z"></path>
+                    <path d="M0,32 C100,55 200,10 300,32 C400,54 500,12 600,32 L600,60 L0,60 Z" transform="translate(600,0)"></path>
+                </svg>
+                <svg class="wave wave-front" viewBox="0 0 600 60" preserveAspectRatio="none" aria-hidden="true">
+                    <path d="M0,38 C120,15 220,52 300,36 C420,14 500,50 600,34 L600,60 L0,60 Z"></path>
+                    <path d="M0,38 C120,15 220,52 300,36 C420,14 500,50 600,34 L600,60 L0,60 Z" transform="translate(600,0)"></path>
+                </svg>
+                <div class="foot-row">
+                    <b>&copy; <span class="copyright"></span> Yahya ÖZSOY</b>
+                    <div class="socials">
+                        <a href="https://github.com/yahyaozsoy" target="_blank" class="fa-brands fa-github socialmedias tooltip"><span class="tooltiptext small">Github</span></a>
+                        <a href="https://www.youtube.com/@YAHYAOZSOYY" target="_blank" class="fa-brands fa-youtube socialmedias tooltip"><span class="tooltiptext small">Youtube</span></a>
+                        <a href="https://www.linkedin.com/in/yahya-ozsoy" target="_blank" class="fa-brands fa-linkedin-in socialmedias tooltip"><span class="tooltiptext small">LinkedIn</span></a>
+                        <a href="https://discord.com/users/347321474748776450" target="_blank" class="fa-brands fa-discord socialmedias tooltip"><span class="tooltiptext small">Discord</span></a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        `;
+        this.querySelector('.copyright').textContent = new Date().getFullYear();
+    }
+}
+
+customElements.define('as-wavefooter', A_WaveFooter);
+
+// Snow for the holiday season (Dec 1 - Jan 6), respects reduced-motion preference.
+(function loadHolidaySnow() {
+    const now = new Date();
+    const isHolidaySeason = now.getMonth() === 11 || (now.getMonth() === 0 && now.getDate() <= 6);
+    const prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+    if (isHolidaySeason && !prefersReducedMotion) {
+        const script = document.createElement('script');
+        script.src = new URL('./snowStorm.js', import.meta.url).href;
+        document.body.appendChild(script);
+    }
+})();
 
 class A_Footer extends HTMLElement{
     connectedCallback() {
