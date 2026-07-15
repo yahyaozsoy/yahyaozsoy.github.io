@@ -5,7 +5,7 @@ class A_Header extends HTMLElement{
                 <nav>
                     <ul class="topnav">
                         <li class="logo"><a href="https://yahyaozsoy.github.io/"></a></li>
-                        <li class="ekim29"><a href="https://www.youtube.com/watch?v=7QmKhx3WIt8"></li>
+                        <li class="ekim29"><a href="https://www.youtube.com/watch?v=7QmKhx3WIt8"></a></li>
                         <li class="nav-link"><a href="https://yahyaozsoy.github.io/">Anasayfa</a></li>
                         <li class="nav-link"><a href="https://yahyaozsoy.github.io/pages/projects">Projelerim</a></li>
                     </ul>
